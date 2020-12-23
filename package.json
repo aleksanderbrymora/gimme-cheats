@@ -1,0 +1,18 @@
+{
+  "name": "gimme-cheats",
+  "private": true,
+  "version": "1.0.0",
+  "author": "Aleksander Brymora <aleksander.australia@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "scripts": {
+    "start": "lerna run dev",
+    "start:server": "yarn workspace @cheats/server dev",
+    "start:client": "yarn workspace @cheats/client dev"
+  }
+}
