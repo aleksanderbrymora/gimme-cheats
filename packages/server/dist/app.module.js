@@ -43,6 +43,7 @@ AppModule = __decorate([
                 playground: true,
                 autoSchemaFile: true,
                 sortSchema: true,
+                cors: true,
             }),
             sheets_module_1.SheetsModule,
             quizlet_module_1.QuizletModule,

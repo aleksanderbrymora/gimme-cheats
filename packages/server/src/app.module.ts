@@ -33,6 +33,7 @@ import { QuizletModule } from './quizlet/quizlet.module';
       playground: true,
       autoSchemaFile: true,
       sortSchema: true,
+      cors: true,
     }),
     SheetsModule,
     QuizletModule,

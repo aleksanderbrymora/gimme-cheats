@@ -12,13 +12,13 @@ function createApolloClient() {
   return new ApolloClient({
     ssrMode: typeof window === 'undefined', // set to true for SSR
     link: new HttpLink({
-      uri: 'http://localhost:4000',
+      uri: 'http://localhost:4000/graphql',
     }),
     cache: new InMemoryCache(),
   });
 }
 
-export function initializeApollo(initialState: NormalizedCacheObject = null) {
+export function initializeApollo(initialState: NormalizedCacheObject) {
   apolloClient ||= createApolloClient();
 
   if (initialState) {
