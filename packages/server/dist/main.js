@@ -5,6 +5,7 @@ const app_module_1 = require("./app.module");
 async function bootstrap() {
     const app = await core_1.NestFactory.create(app_module_1.AppModule);
     await app.listen(4000);
+    console.log('Server running at http://localhost:4000/graphql');
 }
 bootstrap();
 //# sourceMappingURL=main.js.map
