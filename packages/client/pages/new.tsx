@@ -1,8 +1,8 @@
-import { Grid } from '@chakra-ui/core';
+import { Grid } from '@chakra-ui/react';
 import { observer } from 'mobx-react';
 import React from 'react';
-import Main from 'src/pages/create/components/Main';
-import Side from './components/Side';
+import Main from '../components/create/Main';
+import Side from '../components/create/Side';
 
 const Create = observer(() => {
   return (

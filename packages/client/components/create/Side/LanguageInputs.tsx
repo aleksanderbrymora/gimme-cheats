@@ -1,26 +1,21 @@
-import { Box, Input, Stack } from '@chakra-ui/core';
+import { Box, Input, Stack } from '@chakra-ui/react';
 import { observer } from 'mobx-react';
 import React from 'react';
-import { useMst } from 'src/models/Root';
+import { useMst } from 'models/Root';
 import capitalize from 'lodash.capitalize';
 
 const LanguageInputs = observer(() => {
   const {
-    sheet: {
-      changeFromLanguage: changeFromLanuage,
-      changeToLanuage,
-      fromLang,
-      toLang,
-    },
+    sheet: { changeFromLanguage, changeToLanguage, fromLang, toLang },
   } = useMst();
   return (
     <Stack spacing={3} isInline my='1rem' justifyContent='space-between'>
       <LanguageInput
         name='from'
-        onChange={changeFromLanuage}
+        onChange={changeFromLanguage}
         value={fromLang}
       />
-      <LanguageInput name='to' onChange={changeToLanuage} value={toLang} />
+      <LanguageInput name='to' onChange={changeToLanguage} value={toLang} />
     </Stack>
   );
 });

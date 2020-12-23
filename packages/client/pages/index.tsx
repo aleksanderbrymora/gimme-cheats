@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { Box, Heading } from '@chakra-ui/react';
 
 export default function Home() {
   return (
@@ -7,7 +8,9 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <main>sup</main>
+      <Box maxW={1200} m='auto' px='1rem'>
+        <Heading>Home</Heading>
+      </Box>
     </div>
   );
 }

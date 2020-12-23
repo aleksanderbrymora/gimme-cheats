@@ -4,7 +4,7 @@ import {
   AlertIcon,
   AlertTitle,
   CloseButton,
-} from '@chakra-ui/core';
+} from '@chakra-ui/react';
 import React from 'react';
 import capitalize from 'lodash.capitalize';
 

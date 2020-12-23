@@ -6,8 +6,8 @@ import {
   types,
 } from 'mobx-state-tree';
 import capitalize from 'lodash.capitalize';
-import { exampleWords } from 'src/utils/exampleWords';
-import { parseInput } from 'src/utils/parseInput';
+import { exampleWords } from 'lib/exampleWords';
+import { parseInput } from 'lib/parseInput';
 import { v4 } from 'uuid';
 import { rootStore } from './Root';
 

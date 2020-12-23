@@ -10,8 +10,8 @@ import {
   TextRun,
 } from 'docx';
 import { Instance } from 'mobx-state-tree';
-import { rootStore } from 'src/models/Root';
-import { Word } from 'src/models/Words';
+import { rootStore } from 'models/Root';
+import { Word } from 'models/Words';
 import { saveAs } from './filesaver';
 
 const prepareChildren = (items: Instance<typeof Word>[]) => {

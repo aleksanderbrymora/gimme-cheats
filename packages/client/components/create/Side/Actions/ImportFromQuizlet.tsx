@@ -8,10 +8,10 @@ import {
   Link,
   Stack,
   Text,
-} from '@chakra-ui/core';
+} from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
-import { useMst } from 'src/models/Root';
-import { isValidQuizletURL } from 'src/utils/quizlet/validateQuizletURL';
+import { useMst } from 'models/Root';
+import { isValidQuizletURL } from 'lib/quizlet/validateQuizletURL';
 
 const QUIZLET = gql`
   query quizlet($url: String!) {
@@ -55,7 +55,7 @@ const ImportFromQuizlet = () => {
         quizlet: { fromLanguage, toLanguage, title, words: quizletWords },
       } = data as QuizletType;
       sheet.changeTitle(title);
-      sheet.changeToLanuage(toLanguage);
+      sheet.changeToLanguage(toLanguage);
       sheet.changeFromLanguage(fromLanguage);
       quizletWords.forEach(({ from, to }) => words.add({ from, to }));
     }

@@ -20,7 +20,7 @@ export const Sheet = types
     changeFromLanguage(to: string) {
       self.fromLang = to;
     },
-    changeToLanuage(to: string) {
+    changeToLanguage(to: string) {
       self.toLang = to;
     },
     changeTitle(to: string) {

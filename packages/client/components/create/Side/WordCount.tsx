@@ -1,7 +1,7 @@
-import { Box, Heading } from '@chakra-ui/core';
+import { Box, Heading } from '@chakra-ui/react';
 import { observer } from 'mobx-react';
 import React from 'react';
-import { useMst } from 'src/models/Root';
+import { useMst } from 'models/Root';
 import pluralize from 'pluralize';
 
 const WordCount = observer(() => {
