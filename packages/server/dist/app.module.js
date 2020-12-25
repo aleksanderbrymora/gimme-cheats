@@ -14,6 +14,8 @@ const nestjs_easyconfig_1 = require("nestjs-easyconfig");
 const pg_connection_string_1 = require("pg-connection-string");
 const sheets_module_1 = require("./sheets/sheets.module");
 const quizlet_module_1 = require("./quizlet/quizlet.module");
+const users_module_1 = require("./users/users.module");
+const user_entity_1 = require("./users/user.entity");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -30,7 +32,7 @@ AppModule = __decorate([
                     username: connectionOptions.user,
                     password: connectionOptions.password,
                     database: connectionOptions.database,
-                    entities: [],
+                    entities: [user_entity_1.UserEntity],
                     synchronize: true,
                     logger: 'debug',
                     dropSchema: process.env.NODE_ENV !== 'production',
@@ -47,6 +49,7 @@ AppModule = __decorate([
             }),
             sheets_module_1.SheetsModule,
             quizlet_module_1.QuizletModule,
+            users_module_1.UsersModule,
         ],
         controllers: [],
         providers: [],

@@ -5,6 +5,8 @@ import { EasyconfigModule } from 'nestjs-easyconfig';
 import { parse as parseDBString } from 'pg-connection-string';
 import { SheetsModule } from './sheets/sheets.module';
 import { QuizletModule } from './quizlet/quizlet.module';
+import { UsersModule } from './users/users.module';
+import { UserEntity } from './users/user.entity';
 
 @Module({
   imports: [
@@ -20,7 +22,7 @@ import { QuizletModule } from './quizlet/quizlet.module';
         username: connectionOptions.user,
         password: connectionOptions.password,
         database: connectionOptions.database as string,
-        entities: [],
+        entities: [UserEntity],
         synchronize: true,
         logger: 'debug',
         dropSchema: process.env.NODE_ENV !== 'production',
@@ -37,6 +39,7 @@ import { QuizletModule } from './quizlet/quizlet.module';
     }),
     SheetsModule,
     QuizletModule,
+    UsersModule,
   ],
   controllers: [],
   providers: [],

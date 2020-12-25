@@ -26,6 +26,25 @@ if (typeof window !== 'undefined') {
   });
 }
 
+// signUpFeature: {
+//   signUpForm: {
+//     formFields: [
+//       {
+//         id: 'username',
+//         label: 'Username',
+//         placeholder: 'Pick your username',
+// validate: async (value: string) => {
+//   const isValid = RegExp(
+//     /^[A-Za-z0-9]+(?:[_-][A-Za-z0-9]+)*$/,
+//   ).test(value);
+//   console.log({value})
+//   return isValid ? undefined : 'Wrong format of username';
+// },
+//       },
+//     ],
+//   },
+// },
+
 const App = ({ Component, pageProps }: AppProps) => {
   const apolloClient = useApollo(pageProps.initialApolloState);
 

@@ -1,3 +1,4 @@
+import { SearchIcon } from '@chakra-ui/icons';
 import {
   Flex,
   Heading,
@@ -7,10 +8,10 @@ import {
   Link,
   Stack,
 } from '@chakra-ui/react';
-import React from 'react';
-import ThemeToggle from './ThemeToggle';
 import RouterLink from 'next/link';
-import { SearchIcon } from '@chakra-ui/icons';
+import React from 'react';
+import Login from './Login';
+import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
   return (
@@ -33,13 +34,14 @@ const Navbar = () => {
         </Stack>
       </RouterLink>
       <Stack isInline spacing={5} align='center'>
-        <Stack isInline spacing={8}>
+        <Stack isInline align='center' spacing={8}>
           <RouterLink href='/'>
             <Link fontSize={18}>Home</Link>
           </RouterLink>
           <RouterLink href='/create'>
             <Link fontSize={18}>Create</Link>
           </RouterLink>
+          <Login />
         </Stack>
         <InputGroup>
           <InputLeftElement children={<SearchIcon />} />
