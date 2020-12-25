@@ -22,28 +22,49 @@ if (typeof window !== 'undefined') {
       websiteDomain: websiteUrl,
       apiBasePath: 'api/auth',
     },
-    recipeList: [EmailPassword.init(), Session.init()],
+    recipeList: [
+      EmailPassword.init({
+        signInAndUpFeature: {
+          signUpForm: {
+            formFields: [
+              {
+                id: 'username',
+                label: 'Username',
+                placeholder: 'Pick your username',
+                validate: async (value: string) => {
+                  const isValid = RegExp(
+                    /^[A-Za-z0-9]+(?:[_-][A-Za-z0-9]+)*$/,
+                  ).test(value);
+                  if (!isValid) return `Can't use that format of username`;
+
+                  const res = await fetch(`http://localhost:4000/graphql`, {
+                    method: 'POST',
+                    body: JSON.stringify({
+                      query: `query($username: String!) { isUsernameFree(username: $username) }`,
+                      variables: {
+                        username: value,
+                      },
+                    }),
+                    headers: {
+                      'Content-type': 'application/json',
+                    },
+                  });
+
+                  const isFree = await res.json();
+                  if (!isFree?.data?.isUsernameFree) {
+                    return 'That username is already taken';
+                  }
+                  return undefined;
+                },
+              },
+            ],
+          },
+        },
+      } as any),
+      Session.init(),
+    ],
   });
 }
-
-// signUpFeature: {
-//   signUpForm: {
-//     formFields: [
-//       {
-//         id: 'username',
-//         label: 'Username',
-//         placeholder: 'Pick your username',
-// validate: async (value: string) => {
-//   const isValid = RegExp(
-//     /^[A-Za-z0-9]+(?:[_-][A-Za-z0-9]+)*$/,
-//   ).test(value);
-//   console.log({value})
-//   return isValid ? undefined : 'Wrong format of username';
-// },
-//       },
-//     ],
-//   },
-// },
 
 const App = ({ Component, pageProps }: AppProps) => {
   const apolloClient = useApollo(pageProps.initialApolloState);

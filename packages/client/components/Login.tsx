@@ -14,7 +14,10 @@ const Login = () => {
   const handleSignOut = async () => {
     await signOut();
     setIsLoggedIn(false);
-    window.location.href = '/';
+    setTimeout(() => {
+      const location = window.location.href;
+      if (location !== '/') window.location.href = '/';
+    }, 1);
   };
 
   return isLoggedIn ? (

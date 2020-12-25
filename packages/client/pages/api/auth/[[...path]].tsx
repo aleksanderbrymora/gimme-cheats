@@ -28,44 +28,27 @@ SuperTokens.init({
         formFields: [
           {
             id: 'username',
-            validate: async (username: string) => {
-              return undefined;
+            validate: async (value: string) => {
+              // TODO make this call db to check if username is free
+              const isValid = RegExp(
+                /^[A-Za-z0-9]+(?:[_-][A-Za-z0-9]+)*$/,
+              ).test(value);
+              return isValid ? undefined : 'Wrong format of username';
             },
           },
         ],
-        handleCustomFormFieldsPostSignUp: async () => {},
+        handleCustomFormFieldsPostSignUp: async (user, formFields) => {
+          console.log({ user, formFields });
+          const { value: username } = formFields[0];
+          const {id, email} = user
+        },
       },
     }),
     Session.init(),
   ],
 });
 
-// {
-//       signUpFeature: {
-//         formFields: [
-//           {
-//             id: 'username',
-//             validate: async (value: string) => {
-//               // TODO make this call db to check if username is free
-//               const isValid = RegExp(
-//                 /^[A-Za-z0-9]+(?:[_-][A-Za-z0-9]+)*$/,
-//               ).test(value);
-//               return isValid ? undefined : 'Wrong format of username';
-//             },
-//           },
-//         ],
-//         handleCustomFormFieldsPostSignUp: async (user, formFields) => {
-//           console.log({ user, formFields });
-//           /* formFields is [
-//                         {id: "name", value: "..."},
-//                         {id: "age", value: ...},
-//                         {id: "country", value: "..." or "" if not provided}
-//                        ]
-//                     */
-//           // TODO: Sanitize form fields and store in your DB.
-//         },
-//       },
-//     }
+//
 
 const cors = Cors({
   origin: websiteDomain,
