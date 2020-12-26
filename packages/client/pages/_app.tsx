@@ -7,6 +7,7 @@ import EmailPassword from 'supertokens-auth-react/recipe/emailpassword';
 import Session from 'supertokens-auth-react/recipe/session';
 import Navbar from '../components/Navbar';
 import { useApollo } from '../lib/apolloClient';
+import axios from 'axios';
 
 const websitePort = process.env.ST_URL || process.env.APP_PORT || 3000;
 const websiteUrl =
@@ -37,21 +38,20 @@ if (typeof window !== 'undefined') {
                   ).test(value);
                   if (!isValid) return `Can't use that format of username`;
 
-                  const res = await fetch(`http://localhost:4000/graphql`, {
-                    method: 'POST',
-                    body: JSON.stringify({
+                  const isFree = await axios({
+                    url: `http://localhost:4000/graphql`,
+                    method: 'post',
+                    data: {
                       query: `query($username: String!) { isUsernameFree(username: $username) }`,
                       variables: {
                         username: value,
                       },
-                    }),
-                    headers: {
-                      'Content-type': 'application/json',
                     },
                   });
 
-                  const isFree = await res.json();
-                  if (!isFree?.data?.isUsernameFree) {
+                  console.log(isFree.data.data);
+
+                  if (!isFree.data.data.isUsernameFree) {
                     return 'That username is already taken';
                   }
                   return undefined;

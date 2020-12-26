@@ -29,7 +29,6 @@ SuperTokens.init({
           {
             id: 'username',
             validate: async (value: string) => {
-              // TODO make this call db to check if username is free
               const isValid = RegExp(
                 /^[A-Za-z0-9]+(?:[_-][A-Za-z0-9]+)*$/,
               ).test(value);
@@ -40,7 +39,7 @@ SuperTokens.init({
         handleCustomFormFieldsPostSignUp: async (user, formFields) => {
           console.log({ user, formFields });
           const { value: username } = formFields[0];
-          const {id, email} = user
+          const { id, email } = user;
         },
       },
     }),
