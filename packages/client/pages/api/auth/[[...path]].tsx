@@ -41,11 +41,22 @@ SuperTokens.init({
           console.log({ user, formFields });
           const { value: username } = formFields[0] as { value: string };
           const { id, email } = user;
-          axios({
+          await axios({
             url: process.env.GQL_URL || `http://localhost:4000/graphql`,
             method: 'post',
             data: {
-              mutation: '',
+              query: `
+                mutation createUser($email: String!, $id: String!, $username: String!) {
+                  createUser(
+                    createUserInput: { email: $email, id: $id, username: $username }
+                  ) {
+                    email
+                    id
+                    superTokenID
+                    username
+                  }
+                }
+              `,
               variables: { username, email, id },
             },
           });

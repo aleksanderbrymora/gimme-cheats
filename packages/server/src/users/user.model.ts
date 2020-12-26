@@ -10,7 +10,7 @@ export class User {
   id: number;
 
   @Field({ description: 'ID from the supertokens auth service' })
-  superTokenId: string;
+  superTokenID: string;
 
   @IsEmail()
   @Field()

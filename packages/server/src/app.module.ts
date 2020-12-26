@@ -24,7 +24,7 @@ import { UserEntity } from './users/user.entity';
         database: connectionOptions.database as string,
         entities: [UserEntity],
         synchronize: true,
-        logger: 'debug',
+        logger: 'advanced-console',
         dropSchema: process.env.NODE_ENV !== 'production',
         cache: false,
         logging: 'all',

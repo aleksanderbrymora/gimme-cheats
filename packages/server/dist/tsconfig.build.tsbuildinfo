@@ -5280,11 +5280,6 @@
         "signature": "aed40da60adc013ae316f43021392042fda9baee6ee99068169592a248dca1d3",
         "affectsGlobalScope": false
       },
-      "../src/users/users.service.ts": {
-        "version": "88c82fdd5f1b93dfcae28ebff629a0559e1d05f3531de6b918559e33a30810a2",
-        "signature": "7d5aac1fabe65730bd6691471647c588a2e737e7be990af5883b1418b03372df",
-        "affectsGlobalScope": false
-      },
       "../../../node_modules/class-validator/types/validation/ValidationError.d.ts": {
         "version": "d224f2ef464cf2a544dcf6be6b416db5563aa5ca4c94e2a1d93bf3765c1f77cb",
         "signature": "d224f2ef464cf2a544dcf6be6b416db5563aa5ca4c94e2a1d93bf3765c1f77cb",
@@ -5900,14 +5895,24 @@
         "signature": "1d5f30cbd06ffa2aab22346b087e140f069851c17b91189be8d1e168d53f9f93",
         "affectsGlobalScope": false
       },
+      "../src/users/create-user.input.ts": {
+        "version": "f86f169ff74377aea5cb3e0a270616e9687dae555712bad24084ec14b52a0e99",
+        "signature": "d225e5fb5756f1fe72ebf6ecb303aa5015928fff9cbc6f547f544bd7c52bb74e",
+        "affectsGlobalScope": false
+      },
+      "../src/users/users.service.ts": {
+        "version": "04ccae33a824e3d3e02b64f2979a5b2943cf9f69284f03371c4b3432f2bd3de7",
+        "signature": "1ee4aad3058a92cfded3c0dc5a438014f0d4851980f47f51069131d09332ca82",
+        "affectsGlobalScope": false
+      },
       "../src/users/user.model.ts": {
-        "version": "29d8c0c694285b1cd7215c15a6266fa5a7c5ab2f703e670604d3d019fd1a44a2",
-        "signature": "3a657c2cc0f77d04bfd869f45a8d4b9b02494d2249332e83180c252766f8aa2f",
+        "version": "ae1307a6e68076c5696f035caf0459909aeeb7ee56141506a65628f90bf7dda8",
+        "signature": "7ff4c881e4ec3a519b858dc431d2bc7ed92539a40a7d031064a220d940524d4a",
         "affectsGlobalScope": false
       },
       "../src/users/users.resolver.ts": {
-        "version": "2041cec81d257b777a4713e4cf26ec0ecee8201ce496259b19db5e084cba5bf0",
-        "signature": "756a52fedcf0bbe146c19917b3b52d743a7d4948ca51d3e8e70c662641a41f24",
+        "version": "0ebf0b81489ebf8023c148e285a42b91a245619b823d747881546b5be835a173",
+        "signature": "d82b62d5ffa381b88cb26d87df99f5cb6c5058b6658f18abe3d4758706668df8",
         "affectsGlobalScope": false
       },
       "../src/users/users.module.ts": {
@@ -5916,12 +5921,12 @@
         "affectsGlobalScope": false
       },
       "../src/app.module.ts": {
-        "version": "49a1505336f0df84dc5f84e5dbc86e519d00c09747a641f7e3cb0e31acf7e1cb",
+        "version": "24feff3954bb3e6cca7b8ca5fa1ea399d86c25841eaead951855025dbe485218",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
       "../src/main.ts": {
-        "version": "097a1e003b341bb5145913f4cecf421e3fd2be16b0a139558f9d9d03b4e03f87",
+        "version": "7b682a0d55ee8ab218acea170d3e51c0c9c614732c107018ea2a1964a10edcba",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -11554,6 +11559,10 @@
       "../src/sheets/sheets.service.ts": [
         "../../../node_modules/@nestjs/common/index.d.ts"
       ],
+      "../src/users/create-user.input.ts": [
+        "../../../node_modules/@nestjs/graphql/index.d.ts",
+        "../../../node_modules/class-validator/types/index.d.ts"
+      ],
       "../src/users/user.entity.ts": [
         "../../../node_modules/typeorm/index.d.ts"
       ],
@@ -11570,6 +11579,7 @@
       ],
       "../src/users/users.resolver.ts": [
         "../../../node_modules/@nestjs/graphql/index.d.ts",
+        "../src/users/create-user.input.ts",
         "../src/users/user.model.ts",
         "../src/users/users.service.ts"
       ],
@@ -11577,6 +11587,7 @@
         "../../../node_modules/@nestjs/common/index.d.ts",
         "../../../node_modules/@nestjs/typeorm/index.d.ts",
         "../../../node_modules/typeorm/index.d.ts",
+        "../src/users/create-user.input.ts",
         "../src/users/user.entity.ts"
       ]
     },
@@ -16722,10 +16733,13 @@
         "../src/sheets/sheets.service.ts"
       ],
       "../src/users/users.resolver.ts": [
+        "../src/users/create-user.input.ts",
+        "../src/users/user.model.ts",
         "../src/users/users.service.ts"
       ],
       "../src/users/users.service.ts": [
         "../../../node_modules/typeorm/index.d.ts",
+        "../src/users/create-user.input.ts",
         "../src/users/user.entity.ts"
       ]
     },
@@ -17996,6 +18010,7 @@
       "../src/sheets/sheets.module.ts",
       "../src/sheets/sheets.resolver.ts",
       "../src/sheets/sheets.service.ts",
+      "../src/users/create-user.input.ts",
       "../src/users/user.entity.ts",
       "../src/users/user.model.ts",
       "../src/users/users.module.ts",

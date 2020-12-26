@@ -34,7 +34,7 @@ AppModule = __decorate([
                     database: connectionOptions.database,
                     entities: [user_entity_1.UserEntity],
                     synchronize: true,
-                    logger: 'debug',
+                    logger: 'advanced-console',
                     dropSchema: process.env.NODE_ENV !== 'production',
                     cache: false,
                     logging: 'all',
