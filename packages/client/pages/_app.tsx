@@ -39,7 +39,7 @@ if (typeof window !== 'undefined') {
                   if (!isValid) return `Can't use that format of username`;
 
                   const isFree = await axios({
-                    url: `http://localhost:4000/graphql`,
+                    url: process.env.GQL_URL || `http://localhost:4000/graphql`,
                     method: 'post',
                     data: {
                       query: `query($username: String!) { isUsernameFree(username: $username) }`,

@@ -4,6 +4,7 @@ import Session from 'supertokens-node/recipe/session';
 import EmailPassword from 'supertokens-node/recipe/emailpassword';
 import Cors from 'cors';
 import { NextApiRequest, NextApiResponse } from 'next';
+import axios from 'axios';
 
 const apiPort = process.env.APP_PORT || 3000;
 const apiDomain = process.env.APP_URL || `http://localhost:${apiPort}`;
@@ -38,8 +39,16 @@ SuperTokens.init({
         ],
         handleCustomFormFieldsPostSignUp: async (user, formFields) => {
           console.log({ user, formFields });
-          const { value: username } = formFields[0];
+          const { value: username } = formFields[0] as { value: string };
           const { id, email } = user;
+          axios({
+            url: process.env.GQL_URL || `http://localhost:4000/graphql`,
+            method: 'post',
+            data: {
+              mutation: '',
+              variables: { username, email, id },
+            },
+          });
         },
       },
     }),
