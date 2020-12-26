@@ -7,6 +7,8 @@ import { SheetsModule } from './sheets/sheets.module';
 import { QuizletModule } from './quizlet/quizlet.module';
 import { UsersModule } from './users/users.module';
 import { UserEntity } from './users/user.entity';
+import { LanguagesModule } from './languages/languages.module';
+import { LanguageEntity } from './languages/language.entity';
 
 @Module({
   imports: [
@@ -22,7 +24,7 @@ import { UserEntity } from './users/user.entity';
         username: connectionOptions.user,
         password: connectionOptions.password,
         database: connectionOptions.database as string,
-        entities: [UserEntity],
+        entities: [UserEntity, LanguageEntity],
         synchronize: true,
         logger: 'advanced-console',
         dropSchema: process.env.NODE_ENV !== 'production',
@@ -40,6 +42,7 @@ import { UserEntity } from './users/user.entity';
     SheetsModule,
     QuizletModule,
     UsersModule,
+    LanguagesModule,
   ],
   controllers: [],
   providers: [],

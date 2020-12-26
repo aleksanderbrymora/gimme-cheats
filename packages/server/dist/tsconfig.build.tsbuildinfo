@@ -5920,13 +5920,43 @@
         "signature": "aa1725e38b5a0b4009f6a74f296f173e7926c119a60454dbd2e523861735df69",
         "affectsGlobalScope": false
       },
+      "../src/languages/create-language.input.ts": {
+        "version": "7cb113d8c48c4bdf2e644da33af0c5485ca44b55cf16603383a19d2c08a7b382",
+        "signature": "f6001604a6c6a585406c47843f133c3b04df008a6e0ced1c7007d316218a30e6",
+        "affectsGlobalScope": false
+      },
+      "../src/languages/language.entity.ts": {
+        "version": "108a743901a4edf461cfe7aeed4a27c72c0c2739db51f6af4ab6313660bf66b6",
+        "signature": "d12f66a91514ed9be0f5262ab9d8c608de1cf7b61b74f4dd9589f647a920a0b7",
+        "affectsGlobalScope": false
+      },
+      "../src/languages/language.model.ts": {
+        "version": "ec3d980d53411fcce58158123198e28c48a94606c2c676e4ba7752af5240518b",
+        "signature": "1663fdd944f1e8d74fb2793af5e24a395507d82434e30413066887cb441002d7",
+        "affectsGlobalScope": false
+      },
+      "../src/languages/languages.service.ts": {
+        "version": "b24c87bcf79703789ccbdf09d17664925b7fa2b6ac1586d5a091af52fef11689",
+        "signature": "b8af461b329c331b0a1a070e02560ba248a0bcfd695f2dcfae11643937aead18",
+        "affectsGlobalScope": false
+      },
+      "../src/languages/languages.resolver.ts": {
+        "version": "43756ea42383a001a9b6d94db50d7e4071bbc76fea97343545e06bf9b8c23c60",
+        "signature": "44d7a210288ed947cff6ca8c9f3cebbd93d64e65f5b7e6ddc37fdb362e4bd9fe",
+        "affectsGlobalScope": false
+      },
+      "../src/languages/languages.module.ts": {
+        "version": "6fa35ab1802bb95591eeaaaa21267c3962d96850d6000245a5054fea84f63621",
+        "signature": "58055a41ff6e384765b18295afef90ca17d063815b469c65bc2697ff5c54aa3c",
+        "affectsGlobalScope": false
+      },
       "../src/app.module.ts": {
-        "version": "24feff3954bb3e6cca7b8ca5fa1ea399d86c25841eaead951855025dbe485218",
+        "version": "bccb37b6b1ea6a3b1fea0b0cda1c6fa1ea02d261c6b4cf07f5f3017817ed1525",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
       "../src/main.ts": {
-        "version": "7b682a0d55ee8ab218acea170d3e51c0c9c614732c107018ea2a1964a10edcba",
+        "version": "097a1e003b341bb5145913f4cecf421e3fd2be16b0a139558f9d9d03b4e03f87",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -11515,10 +11545,42 @@
         "../../../node_modules/@nestjs/typeorm/index.d.ts",
         "../../../node_modules/nestjs-easyconfig/index.d.ts",
         "../../../node_modules/pg-connection-string/index.d.ts",
+        "../src/languages/language.entity.ts",
+        "../src/languages/languages.module.ts",
         "../src/quizlet/quizlet.module.ts",
         "../src/sheets/sheets.module.ts",
         "../src/users/user.entity.ts",
         "../src/users/users.module.ts"
+      ],
+      "../src/languages/create-language.input.ts": [
+        "../../../node_modules/@nestjs/graphql/index.d.ts"
+      ],
+      "../src/languages/language.entity.ts": [
+        "../../../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/languages/language.model.ts": [
+        "../../../node_modules/@nestjs/graphql/index.d.ts"
+      ],
+      "../src/languages/languages.module.ts": [
+        "../../../node_modules/@nestjs/common/index.d.ts",
+        "../../../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/languages/language.entity.ts",
+        "../src/languages/languages.resolver.ts",
+        "../src/languages/languages.service.ts"
+      ],
+      "../src/languages/languages.resolver.ts": [
+        "../../../node_modules/@nestjs/graphql/index.d.ts",
+        "../src/languages/create-language.input.ts",
+        "../src/languages/language.model.ts",
+        "../src/languages/languages.service.ts"
+      ],
+      "../src/languages/languages.service.ts": [
+        "../../../node_modules/@nestjs/common/index.d.ts",
+        "../../../node_modules/@nestjs/typeorm/index.d.ts",
+        "../../../node_modules/typeorm/index.d.ts",
+        "../src/languages/create-language.input.ts",
+        "../src/languages/language.entity.ts",
+        "../src/languages/language.model.ts"
       ],
       "../src/main.ts": [
         "../../../node_modules/@nestjs/core/index.d.ts",
@@ -16722,6 +16784,16 @@
       "../../../node_modules/zen-observable-ts/lib/zenObservable.d.ts": [
         "../../../node_modules/zen-observable-ts/lib/types.d.ts"
       ],
+      "../src/languages/languages.resolver.ts": [
+        "../src/languages/create-language.input.ts",
+        "../src/languages/language.model.ts",
+        "../src/languages/languages.service.ts"
+      ],
+      "../src/languages/languages.service.ts": [
+        "../../../node_modules/typeorm/index.d.ts",
+        "../src/languages/create-language.input.ts",
+        "../src/languages/language.entity.ts"
+      ],
       "../src/quizlet/quizlet.resolver.ts": [
         "../src/quizlet/quizlet.model.ts",
         "../src/quizlet/quizlet.service.ts"
@@ -18001,6 +18073,12 @@
       "../../../node_modules/zen-observable-ts/lib/types.d.ts",
       "../../../node_modules/zen-observable-ts/lib/zenObservable.d.ts",
       "../src/app.module.ts",
+      "../src/languages/create-language.input.ts",
+      "../src/languages/language.entity.ts",
+      "../src/languages/language.model.ts",
+      "../src/languages/languages.module.ts",
+      "../src/languages/languages.resolver.ts",
+      "../src/languages/languages.service.ts",
       "../src/main.ts",
       "../src/quizlet/quizlet.model.ts",
       "../src/quizlet/quizlet.module.ts",

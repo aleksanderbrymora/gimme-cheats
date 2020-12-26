@@ -1,4 +1,4 @@
-import { Box, Input, Stack } from '@chakra-ui/react';
+import { Box, Input, Select, Stack } from '@chakra-ui/react';
 import { observer } from 'mobx-react';
 import React from 'react';
 import { useMst } from 'models/Root';
@@ -28,21 +28,21 @@ interface LanguageProps {
 
 const LanguageInput: React.FC<LanguageProps> = observer(
   ({ name, onChange, value }) => {
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
       onChange(e.target.value);
     };
 
     return (
       <Box>
         <label htmlFor={`language-input-${name}`}>{capitalize(name)}</label>
-        <Input
-          width='90%'
-          data-testid='language-input'
+        <Select
           onChange={handleChange}
-          value={value}
           placeholder={capitalize(name)}
           id={`language-input-${name}`}
-        />
+        >
+          <option value='option1'>Polish</option>
+          <option value='option2'>English</option>
+        </Select>
       </Box>
     );
   },
