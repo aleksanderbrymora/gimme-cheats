@@ -14,6 +14,7 @@ export class QuizletService {
   async getQuizletData(url: string) {
     const Q = new Quizlet();
     Q.words ||= [];
+    console.log('starting the scrape. URL: ', url);
 
     // Getting the words
     const { data } = await this.getQuizletPage(url);

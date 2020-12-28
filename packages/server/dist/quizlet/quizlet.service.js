@@ -20,6 +20,7 @@ let QuizletService = class QuizletService {
     async getQuizletData(url) {
         const Q = new quizlet_model_1.Quizlet();
         Q.words || (Q.words = []);
+        console.log('starting the scrape. URL: ', url);
         const { data } = await this.getQuizletPage(url);
         const root = node_html_parser_1.parse(data);
         const pairs = root.querySelectorAll('.SetPageTerms-term');
