@@ -8,6 +8,7 @@ import Session from 'supertokens-auth-react/recipe/session';
 import Navbar from '../components/Navbar';
 import { useApollo } from '../lib/apolloClient';
 import axios from 'axios';
+import { gqlAddress } from '../lib/gqlAddress';
 
 const websitePort = process.env.ST_URL || process.env.APP_PORT || 3000;
 const websiteUrl =
@@ -39,7 +40,7 @@ if (typeof window !== 'undefined') {
                   if (!isValid) return `Can't use that format of username`;
 
                   const isFree = await axios({
-                    url: process.env.GQL_URL || `http://localhost:4000/graphql`,
+                    url: gqlAddress(),
                     method: 'post',
                     data: {
                       query: `query($username: String!) { isUsernameFree(username: $username) }`,

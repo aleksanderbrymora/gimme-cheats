@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { gqlAddress } from './gqlAddress';
 import {
   ApolloClient,
   HttpLink,
@@ -12,8 +13,7 @@ function createApolloClient() {
   return new ApolloClient({
     ssrMode: typeof window === 'undefined', // set to true for SSR
     link: new HttpLink({
-      uri: process.env.GQL_URL,
-      // uri: 'http://localhost:4000/graphql',
+      uri: gqlAddress(),
     }),
     cache: new InMemoryCache(),
   });

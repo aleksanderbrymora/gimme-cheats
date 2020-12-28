@@ -5,6 +5,7 @@ import EmailPassword from 'supertokens-node/recipe/emailpassword';
 import Cors from 'cors';
 import { NextApiRequest, NextApiResponse } from 'next';
 import axios from 'axios';
+import { gqlAddress } from '../../../lib/gqlAddress';
 
 const apiPort = process.env.APP_PORT || 3000;
 const apiDomain = process.env.APP_URL || `http://localhost:${apiPort}`;
@@ -42,7 +43,7 @@ SuperTokens.init({
           const { value: username } = formFields[0] as { value: string };
           const { id, email } = user;
           await axios({
-            url: process.env.GQL_URL || `http://localhost:4000/graphql`,
+            url: gqlAddress(),
             method: 'post',
             data: {
               query: `
