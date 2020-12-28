@@ -34,6 +34,7 @@
     "graphql": "^15.4.0",
     "graphql-tools": "^7.0.2",
     "nestjs-easyconfig": "^2.2.1",
+    "node-fetch": "^2.6.1",
     "node-html-parser": "^2.0.0",
     "pg": "^8.5.1",
     "pg-connection-string": "^2.4.0",

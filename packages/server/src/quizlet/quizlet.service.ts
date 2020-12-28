@@ -1,15 +1,21 @@
 import { Injectable } from '@nestjs/common';
 import { Quizlet, WordPair } from './quizlet.model';
-import axios from 'axios';
 import { parse } from 'node-html-parser';
+import axios from 'axios';
 
 @Injectable()
 export class QuizletService {
   private async getQuizletPage(url: string) {
     const body = await axios.get(url);
     console.log(body);
-    return body;
+    return body.data;
   }
+  // private async getQuizletPage(url: string) {
+  //   const res = await fetch(url);
+  //   const body = await res.text();
+  //   console.log(body);
+  //   return body;
+  // }
 
   async getQuizletData(url: string) {
     const Q = new Quizlet();
@@ -17,32 +23,38 @@ export class QuizletService {
     console.log('starting the scrape. URL: ', url);
 
     // Getting the words
-    const { data } = await this.getQuizletPage(url);
-    const root = parse(data);
-    const pairs = root.querySelectorAll('.SetPageTerms-term');
-    pairs.forEach((p) => {
-      const [from, to] = p.querySelectorAll('a');
-      const wordPair = new WordPair();
-      wordPair.from = from.innerText;
-      wordPair.to = to.innerText;
-      Q.words = [...Q.words, wordPair];
-    });
+    try {
+      const data = await this.getQuizletPage(url);
+      const root = parse(data);
+      const pairs = root.querySelectorAll('.SetPageTerms-term');
+      pairs.forEach((p) => {
+        const [from, to] = p.querySelectorAll('a');
+        const wordPair = new WordPair();
+        wordPair.from = from.innerText;
+        wordPair.to = to.innerText;
+        Q.words = [...Q.words, wordPair];
+      });
 
-    //Getting the languages
-    const [fromLang, toLang] = pairs[0]
-      .querySelectorAll('span')
-      .map((span) =>
-        span.classNames.find((c) => c.includes('lang'))!.replace('lang-', ''),
+      //Getting the languages
+      const [fromLang, toLang] = pairs[0]
+        .querySelectorAll('span')
+        .map((span) =>
+          span.classNames.find((c) => c.includes('lang'))!.replace('lang-', ''),
+        );
+
+      Q.fromLanguage = fromLang;
+      Q.toLanguage = toLang;
+
+      // Getting the title
+      Q.title = root.querySelector('h1').innerText;
+
+      console.log(Q);
+
+      return Q;
+    } catch (error) {
+      throw new Error(
+        'Quizlet is currently blocking this server for whatever reason. Give it a sec',
       );
-
-    Q.fromLanguage = fromLang;
-    Q.toLanguage = toLang;
-
-    // Getting the title
-    Q.title = root.querySelector('h1').innerText;
-
-    console.log(Q);
-
-    return Q;
+    }
   }
 }

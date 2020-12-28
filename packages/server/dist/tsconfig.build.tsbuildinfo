@@ -5215,11 +5215,6 @@
         "signature": "dffec7220042c02720a5ff517530560b21ac47b39887b53bad549d5dc7f0d90d",
         "affectsGlobalScope": false
       },
-      "../../../node_modules/axios/index.d.ts": {
-        "version": "0d892f035dbee4534f0ba096407136877595ca592f67ec9bb8a5c912b9c967e8",
-        "signature": "0d892f035dbee4534f0ba096407136877595ca592f67ec9bb8a5c912b9c967e8",
-        "affectsGlobalScope": false
-      },
       "../../../node_modules/node-html-parser/dist/nodes/type.d.ts": {
         "version": "59a50afa27798d65c7a71e987ee0d9ce9e114bb06bac138a73f3c49c12b63487",
         "signature": "59a50afa27798d65c7a71e987ee0d9ce9e114bb06bac138a73f3c49c12b63487",
@@ -5265,8 +5260,13 @@
         "signature": "42f89918592edc388f99a2a18aaf92b9e9be279485329b44919a706e32897515",
         "affectsGlobalScope": false
       },
+      "../../../node_modules/axios/index.d.ts": {
+        "version": "0d892f035dbee4534f0ba096407136877595ca592f67ec9bb8a5c912b9c967e8",
+        "signature": "0d892f035dbee4534f0ba096407136877595ca592f67ec9bb8a5c912b9c967e8",
+        "affectsGlobalScope": false
+      },
       "../src/quizlet/quizlet.service.ts": {
-        "version": "f98e62639d1ca726d6900e06854039f79da76dc3fb86692251ba56e80ef6abe4",
+        "version": "c4f3769378c7a277b9893552416274ca8a31a4f9c17c535add945ebdc5a34848",
         "signature": "6b4eb444e3429f0445b7d7e7ef33d669186fed913f367c9c2d49da34d1145ea5",
         "affectsGlobalScope": false
       },
