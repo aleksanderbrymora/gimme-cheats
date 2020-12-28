@@ -5960,13 +5960,13 @@
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
-      "../src/main.ts": {
-        "version": "befc5c6cc9693cfda98c3fa5048cbd416de92d26bde00632dacdca8cdfefcd16",
-        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "../src/seed.ts": {
+        "version": "0af55cc1778990294d1bb05db049c0273f2ea367ae61b99ed16dc19a3c71a106",
+        "signature": "639be0cf86fce8451235b7f937f13d6a0ce48652a7173fe460e4402c2244df1f",
         "affectsGlobalScope": false
       },
-      "../src/seed.ts": {
-        "version": "b6323f8980af12e9eb48cea56d97548da8d269ed5e5f480b1b67eff41403e456",
+      "../src/main.ts": {
+        "version": "939a81a353c68615079244fb073c360b9706f09934db28f0a8dc550053042478",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -11610,7 +11610,8 @@
       "../src/main.ts": [
         "../../../node_modules/@nestjs/common/index.d.ts",
         "../../../node_modules/@nestjs/core/index.d.ts",
-        "../src/app.module.ts"
+        "../src/app.module.ts",
+        "../src/seed.ts"
       ],
       "../src/quizlet/quizlet.model.ts": [
         "../../../node_modules/@nestjs/graphql/index.d.ts"

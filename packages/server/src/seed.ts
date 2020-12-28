@@ -5,13 +5,14 @@ import { LanguageEntity } from './languages/language.entity';
 import { LanguagesService } from './languages/languages.service';
 import { UserEntity } from './users/user.entity';
 
-const run = async (): Promise<void> => {
+export const seed = async (): Promise<void> => {
   EasyconfigModule.register({ path: '.env' });
   const connectionString = process.env.DATABASE_URL || 'localhost';
   const connectionOptions = parseDBString(connectionString);
 
   const connection = await createConnection({
     type: 'postgres',
+    name: 'seed',
     host: connectionOptions.host as string,
     port: parseInt(connectionOptions.port || '5432'),
     username: connectionOptions.user,
@@ -41,6 +42,7 @@ const run = async (): Promise<void> => {
     { emoji: '🇫🇷', name: 'french' },
   ];
   await languageService.createLanguages(languageData);
+  await connection.close();
 };
 
-run().then(() => console.log('Should be seeded now'));
+// run().then(() => console.log('Should be seeded now'));
