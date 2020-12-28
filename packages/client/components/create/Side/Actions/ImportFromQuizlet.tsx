@@ -72,6 +72,7 @@ const ImportFromQuizlet = () => {
   }, [data]);
 
   const handleClick = () => {
+    console.log({ quizlet });
     getQuizlet({ variables: { url: quizlet } });
   };
 
