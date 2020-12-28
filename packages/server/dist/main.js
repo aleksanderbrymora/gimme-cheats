@@ -6,7 +6,8 @@ const seed_1 = require("./seed");
 async function bootstrap() {
     const app = await core_1.NestFactory.create(app_module_1.AppModule);
     await app.listen(process.env.PORT || 4000);
-    await seed_1.seed();
+    if (process.env.NODE_ENV !== 'production')
+        await seed_1.seed();
     console.log('Server running at http://localhost:4000/graphql');
 }
 bootstrap();

@@ -23,7 +23,7 @@ export class LanguagesResolver {
     return this.languagesService.getAllLanguages();
   }
 
-  @Query(() => [Language])
+  @Query(() => [Language], { name: 'languages' })
   async getLanguages(): Promise<Language[]> {
     return this.languagesService.getAllLanguages();
   }

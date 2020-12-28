@@ -3,7 +3,6 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { CreateLanguageInput } from './create-language.input';
 import { LanguageEntity } from './language.entity';
-import { Language } from './language.model';
 
 @Injectable()
 export class LanguagesService {
@@ -22,14 +21,9 @@ export class LanguagesService {
 
   async createLanguages(
     createLanguageInput: CreateLanguageInput[],
-    // ): Promise<LanguageEntity[]> {
   ): Promise<void> {
     const query = this.languageRepository.createQueryBuilder('language');
-    const languages = await query
-      .insert()
-      .values(createLanguageInput)
-      .execute();
-    console.log(languages);
+    await query.insert().values(createLanguageInput).execute();
   }
 
   async getAllLanguages(): Promise<LanguageEntity[]> {

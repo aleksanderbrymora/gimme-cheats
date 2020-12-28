@@ -34,7 +34,7 @@ export async function getStaticProps() {
   const data = await apolloClient.query({
     query: gql`
       query languages {
-        getLanguages {
+        languages {
           emoji
           id
           name
@@ -43,7 +43,7 @@ export async function getStaticProps() {
     `,
   });
 
-  const languages = data.data.getLanguages.map(
+  const languages = data.data.languages.map(
     ({ emoji, name, id }: { emoji: string; name: string; id: number }) => ({
       emoji,
       name,

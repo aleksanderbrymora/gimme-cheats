@@ -1,11 +1,9 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity } from 'typeorm';
+import { Base } from '../base/base.entity';
 
 @Entity()
-export class SheetEntity {
-  @PrimaryGeneratedColumn()
-  id: number;
-
-  @Column()
+export class SheetEntity extends Base {
+  @Column({ type: 'varchar', length: 50 })
   title: string;
 
   @Column({ default: 0, type: 'int' })
@@ -19,7 +17,4 @@ export class SheetEntity {
 
   @Column({ default: false })
   containsProfanity: boolean;
-
-  @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
-  createdAt: string;
 }

@@ -18,7 +18,7 @@ export class UsersResolver {
     return this.usersService.getBySuperTokenID(id);
   }
 
-  @Query(() => [User])
+  @Query(() => [User], { name: 'users' })
   async getAllUsers(): Promise<User[]> {
     return this.usersService.findAllUsers();
   }
