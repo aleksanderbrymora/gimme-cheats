@@ -18,7 +18,7 @@ function createApolloClient() {
   });
 }
 
-export function initializeApollo(initialState: NormalizedCacheObject) {
+export function initializeApollo(initialState?: NormalizedCacheObject) {
   apolloClient ||= createApolloClient();
 
   if (initialState) {

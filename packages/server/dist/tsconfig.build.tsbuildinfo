@@ -1701,6 +1701,11 @@
         "signature": "e71863e8db54c3584405caa0331efbf08ab6db455b192e95ceb44a2905eb9124",
         "affectsGlobalScope": false
       },
+      "../../../node_modules/@nestjs/graphql/dist/interfaces/field-middleware.interface.d.ts": {
+        "version": "7ac2cf07774504883ab9fb7193eb1c813a57b94c7876fbf3c83a3b147a8a17b3",
+        "signature": "7ac2cf07774504883ab9fb7193eb1c813a57b94c7876fbf3c83a3b147a8a17b3",
+        "affectsGlobalScope": false
+      },
       "../../../node_modules/@nestjs/graphql/dist/interfaces/gql-exception-filter.interface.d.ts": {
         "version": "a229c67e3306551dbd0310b21712247ffed4e881c7a834a19d62a149c8cbd3d1",
         "signature": "a229c67e3306551dbd0310b21712247ffed4e881c7a834a19d62a149c8cbd3d1",
@@ -2187,8 +2192,8 @@
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/node/crypto.d.ts": {
-        "version": "2636f61a2d5f76d4039c7110f65c407a028ec5265e03d855fc2cf62b198ac415",
-        "signature": "2636f61a2d5f76d4039c7110f65c407a028ec5265e03d855fc2cf62b198ac415",
+        "version": "75d76be86ffc40ae985ebace0cbd2c79b1e10c224c925d91f4df5a2705cc3f76",
+        "signature": "75d76be86ffc40ae985ebace0cbd2c79b1e10c224c925d91f4df5a2705cc3f76",
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/node/dgram.d.ts": {
@@ -2327,8 +2332,8 @@
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/node/util.d.ts": {
-        "version": "f5b9d446783f075eed9e93dfba1a5055b3fd61aab285fef3bbc761eadf598204",
-        "signature": "f5b9d446783f075eed9e93dfba1a5055b3fd61aab285fef3bbc761eadf598204",
+        "version": "f28704c27e1bd58068052f5407541a3306f0ffc77f068e2891f46527a4569e25",
+        "signature": "f28704c27e1bd58068052f5407541a3306f0ffc77f068e2891f46527a4569e25",
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/node/v8.d.ts": {
@@ -3011,8 +3016,8 @@
         "affectsGlobalScope": false
       },
       "../../../node_modules/@nestjs/graphql/dist/interfaces/index.d.ts": {
-        "version": "0678c245a48c711b74dfc66dc3b0ba53185fe83b4a17a25c059ad9c74c5b731d",
-        "signature": "0678c245a48c711b74dfc66dc3b0ba53185fe83b4a17a25c059ad9c74c5b731d",
+        "version": "f344f778424bcd8b9832d75f90df9fac81b8afb7e2f280e103e0ff7448b82da1",
+        "signature": "f344f778424bcd8b9832d75f90df9fac81b8afb7e2f280e103e0ff7448b82da1",
         "affectsGlobalScope": false
       },
       "../../../node_modules/@nestjs/graphql/dist/decorators/args.decorator.d.ts": {
@@ -3036,8 +3041,8 @@
         "affectsGlobalScope": false
       },
       "../../../node_modules/@nestjs/graphql/dist/decorators/field.decorator.d.ts": {
-        "version": "e06bb0b92bc3efc66451f33cb51c953c390df5376fccb367eb3ae7b6bc49febf",
-        "signature": "e06bb0b92bc3efc66451f33cb51c953c390df5376fccb367eb3ae7b6bc49febf",
+        "version": "ef2d255aca0e8cea2d2b31bc55497f4ff74002bfbab6f6821fb38c90644631c7",
+        "signature": "ef2d255aca0e8cea2d2b31bc55497f4ff74002bfbab6f6821fb38c90644631c7",
         "affectsGlobalScope": false
       },
       "../../../node_modules/@nestjs/graphql/dist/decorators/hide-field.decorator.d.ts": {
@@ -3156,8 +3161,8 @@
         "affectsGlobalScope": false
       },
       "../../../node_modules/@nestjs/graphql/dist/schema-builder/metadata/property.metadata.d.ts": {
-        "version": "2127a37d365200b771edeb466ebd1d7fb6e99bc4361b64b8b7f33341a857740a",
-        "signature": "2127a37d365200b771edeb466ebd1d7fb6e99bc4361b64b8b7f33341a857740a",
+        "version": "2c6dafeffbb2afc2c681099fea24af5b76c43553d40867e25efe097ed4c78965",
+        "signature": "2c6dafeffbb2afc2c681099fea24af5b76c43553d40867e25efe097ed4c78965",
         "affectsGlobalScope": false
       },
       "../../../node_modules/@nestjs/graphql/dist/schema-builder/metadata/class.metadata.d.ts": {
@@ -3236,8 +3241,8 @@
         "affectsGlobalScope": false
       },
       "../../../node_modules/@nestjs/graphql/dist/schema-builder/factories/object-type-definition.factory.d.ts": {
-        "version": "a1cfdc66d1aba305b66d2a5475f8b13c046bcafec2ec169546ebcb3544e1d4b9",
-        "signature": "a1cfdc66d1aba305b66d2a5475f8b13c046bcafec2ec169546ebcb3544e1d4b9",
+        "version": "6625a586bd0184de5ffd08c2f051ab68b553aaa238d577462ebcef7109f6eec0",
+        "signature": "6625a586bd0184de5ffd08c2f051ab68b553aaa238d577462ebcef7109f6eec0",
         "affectsGlobalScope": false
       },
       "../../../node_modules/@nestjs/graphql/dist/schema-builder/factories/union-definition.factory.d.ts": {
@@ -3691,8 +3696,8 @@
         "affectsGlobalScope": false
       },
       "../../../node_modules/@nestjs/graphql/dist/schema-builder/storages/type-metadata.storage.d.ts": {
-        "version": "2e8f52bc200c6607942f12ca384b12e216e3155ac13a4f550e80fcdce14b7413",
-        "signature": "2e8f52bc200c6607942f12ca384b12e216e3155ac13a4f550e80fcdce14b7413",
+        "version": "d887d91921c8abc99da3a45bf4a84f30536eac545ae3dca88c9548f2c6f7779a",
+        "signature": "d887d91921c8abc99da3a45bf4a84f30536eac545ae3dca88c9548f2c6f7779a",
         "affectsGlobalScope": false
       },
       "../../../node_modules/@nestjs/graphql/dist/schema-builder/storages/index.d.ts": {
@@ -5920,13 +5925,43 @@
         "signature": "aa1725e38b5a0b4009f6a74f296f173e7926c119a60454dbd2e523861735df69",
         "affectsGlobalScope": false
       },
+      "../src/languages/create-language.input.ts": {
+        "version": "7cb113d8c48c4bdf2e644da33af0c5485ca44b55cf16603383a19d2c08a7b382",
+        "signature": "f6001604a6c6a585406c47843f133c3b04df008a6e0ced1c7007d316218a30e6",
+        "affectsGlobalScope": false
+      },
+      "../src/languages/language.entity.ts": {
+        "version": "108a743901a4edf461cfe7aeed4a27c72c0c2739db51f6af4ab6313660bf66b6",
+        "signature": "d12f66a91514ed9be0f5262ab9d8c608de1cf7b61b74f4dd9589f647a920a0b7",
+        "affectsGlobalScope": false
+      },
+      "../src/languages/language.model.ts": {
+        "version": "ec3d980d53411fcce58158123198e28c48a94606c2c676e4ba7752af5240518b",
+        "signature": "1663fdd944f1e8d74fb2793af5e24a395507d82434e30413066887cb441002d7",
+        "affectsGlobalScope": false
+      },
+      "../src/languages/languages.service.ts": {
+        "version": "b24c87bcf79703789ccbdf09d17664925b7fa2b6ac1586d5a091af52fef11689",
+        "signature": "b8af461b329c331b0a1a070e02560ba248a0bcfd695f2dcfae11643937aead18",
+        "affectsGlobalScope": false
+      },
+      "../src/languages/languages.resolver.ts": {
+        "version": "43756ea42383a001a9b6d94db50d7e4071bbc76fea97343545e06bf9b8c23c60",
+        "signature": "44d7a210288ed947cff6ca8c9f3cebbd93d64e65f5b7e6ddc37fdb362e4bd9fe",
+        "affectsGlobalScope": false
+      },
+      "../src/languages/languages.module.ts": {
+        "version": "6fa35ab1802bb95591eeaaaa21267c3962d96850d6000245a5054fea84f63621",
+        "signature": "58055a41ff6e384765b18295afef90ca17d063815b469c65bc2697ff5c54aa3c",
+        "affectsGlobalScope": false
+      },
       "../src/app.module.ts": {
-        "version": "24feff3954bb3e6cca7b8ca5fa1ea399d86c25841eaead951855025dbe485218",
+        "version": "bccb37b6b1ea6a3b1fea0b0cda1c6fa1ea02d261c6b4cf07f5f3017817ed1525",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
       "../src/main.ts": {
-        "version": "7b682a0d55ee8ab218acea170d3e51c0c9c614732c107018ea2a1964a10edcba",
+        "version": "097a1e003b341bb5145913f4cecf421e3fd2be16b0a139558f9d9d03b4e03f87",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -6081,8 +6116,8 @@
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/lodash/common/common.d.ts": {
-        "version": "29304d38d619bac17128f20c21af1a03256f9edf8f0b82e6674565e09e956dff",
-        "signature": "29304d38d619bac17128f20c21af1a03256f9edf8f0b82e6674565e09e956dff",
+        "version": "3594c022901a1c8993b0f78a3f534cfb81e7b619ed215348f7f6882f3db02abc",
+        "signature": "3594c022901a1c8993b0f78a3f534cfb81e7b619ed215348f7f6882f3db02abc",
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/lodash/common/array.d.ts": {
@@ -6121,8 +6156,8 @@
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/lodash/common/object.d.ts": {
-        "version": "28b1db2ffc8a10c84c7286cca8062c44e7e46a12fd028d10bb04d462f6e3dd85",
-        "signature": "28b1db2ffc8a10c84c7286cca8062c44e7e46a12fd028d10bb04d462f6e3dd85",
+        "version": "c311349ec71bb69399ffc4092853e7d8a86c1ca39ddb4cd129e775c19d985793",
+        "signature": "c311349ec71bb69399ffc4092853e7d8a86c1ca39ddb4cd129e775c19d985793",
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/lodash/common/seq.d.ts": {
@@ -6186,8 +6221,8 @@
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/prettier/index.d.ts": {
-        "version": "7403a1397d48771d58d55c603d0c51aa3d4cd6467bca03140f085fdc432eb912",
-        "signature": "7403a1397d48771d58d55c603d0c51aa3d4cd6467bca03140f085fdc432eb912",
+        "version": "c4efa4df1372e991aa44b70b8d87b48865d94ecd26e76025854f2273df155253",
+        "signature": "c4efa4df1372e991aa44b70b8d87b48865d94ecd26e76025854f2273df155253",
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/prop-types/index.d.ts": {
@@ -7442,6 +7477,9 @@
       "../../../node_modules/@nestjs/graphql/dist/interfaces/custom-scalar.interface.d.ts": [
         "../../../node_modules/graphql/index.d.ts"
       ],
+      "../../../node_modules/@nestjs/graphql/dist/interfaces/field-middleware.interface.d.ts": [
+        "../../../node_modules/graphql/index.d.ts"
+      ],
       "../../../node_modules/@nestjs/graphql/dist/interfaces/gql-exception-filter.interface.d.ts": [
         "../../../node_modules/@nestjs/common/index.d.ts"
       ],
@@ -7465,6 +7503,7 @@
         "../../../node_modules/@nestjs/graphql/dist/interfaces/build-schema-options.interface.d.ts",
         "../../../node_modules/@nestjs/graphql/dist/interfaces/complexity.interface.d.ts",
         "../../../node_modules/@nestjs/graphql/dist/interfaces/custom-scalar.interface.d.ts",
+        "../../../node_modules/@nestjs/graphql/dist/interfaces/field-middleware.interface.d.ts",
         "../../../node_modules/@nestjs/graphql/dist/interfaces/gql-exception-filter.interface.d.ts",
         "../../../node_modules/@nestjs/graphql/dist/interfaces/gql-gateway-module-options.interface.d.ts",
         "../../../node_modules/@nestjs/graphql/dist/interfaces/gql-module-options.interface.d.ts",
@@ -7631,6 +7670,7 @@
         "../../../node_modules/@nestjs/graphql/dist/interfaces/type-options.interface.d.ts"
       ],
       "../../../node_modules/@nestjs/graphql/dist/schema-builder/metadata/property.metadata.d.ts": [
+        "../../../node_modules/@nestjs/graphql/dist/interfaces/field-middleware.interface.d.ts",
         "../../../node_modules/@nestjs/graphql/dist/interfaces/index.d.ts",
         "../../../node_modules/@nestjs/graphql/dist/interfaces/type-options.interface.d.ts",
         "../../../node_modules/@nestjs/graphql/dist/schema-builder/metadata/directive.metadata.d.ts",
@@ -11515,10 +11555,42 @@
         "../../../node_modules/@nestjs/typeorm/index.d.ts",
         "../../../node_modules/nestjs-easyconfig/index.d.ts",
         "../../../node_modules/pg-connection-string/index.d.ts",
+        "../src/languages/language.entity.ts",
+        "../src/languages/languages.module.ts",
         "../src/quizlet/quizlet.module.ts",
         "../src/sheets/sheets.module.ts",
         "../src/users/user.entity.ts",
         "../src/users/users.module.ts"
+      ],
+      "../src/languages/create-language.input.ts": [
+        "../../../node_modules/@nestjs/graphql/index.d.ts"
+      ],
+      "../src/languages/language.entity.ts": [
+        "../../../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/languages/language.model.ts": [
+        "../../../node_modules/@nestjs/graphql/index.d.ts"
+      ],
+      "../src/languages/languages.module.ts": [
+        "../../../node_modules/@nestjs/common/index.d.ts",
+        "../../../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/languages/language.entity.ts",
+        "../src/languages/languages.resolver.ts",
+        "../src/languages/languages.service.ts"
+      ],
+      "../src/languages/languages.resolver.ts": [
+        "../../../node_modules/@nestjs/graphql/index.d.ts",
+        "../src/languages/create-language.input.ts",
+        "../src/languages/language.model.ts",
+        "../src/languages/languages.service.ts"
+      ],
+      "../src/languages/languages.service.ts": [
+        "../../../node_modules/@nestjs/common/index.d.ts",
+        "../../../node_modules/@nestjs/typeorm/index.d.ts",
+        "../../../node_modules/typeorm/index.d.ts",
+        "../src/languages/create-language.input.ts",
+        "../src/languages/language.entity.ts",
+        "../src/languages/language.model.ts"
       ],
       "../src/main.ts": [
         "../../../node_modules/@nestjs/core/index.d.ts",
@@ -12655,6 +12727,9 @@
       "../../../node_modules/@nestjs/graphql/dist/interfaces/custom-scalar.interface.d.ts": [
         "../../../node_modules/graphql/index.d.ts"
       ],
+      "../../../node_modules/@nestjs/graphql/dist/interfaces/field-middleware.interface.d.ts": [
+        "../../../node_modules/graphql/index.d.ts"
+      ],
       "../../../node_modules/@nestjs/graphql/dist/interfaces/gql-exception-filter.interface.d.ts": [
         "../../../node_modules/@nestjs/common/index.d.ts"
       ],
@@ -12678,6 +12753,7 @@
         "../../../node_modules/@nestjs/graphql/dist/interfaces/build-schema-options.interface.d.ts",
         "../../../node_modules/@nestjs/graphql/dist/interfaces/complexity.interface.d.ts",
         "../../../node_modules/@nestjs/graphql/dist/interfaces/custom-scalar.interface.d.ts",
+        "../../../node_modules/@nestjs/graphql/dist/interfaces/field-middleware.interface.d.ts",
         "../../../node_modules/@nestjs/graphql/dist/interfaces/gql-exception-filter.interface.d.ts",
         "../../../node_modules/@nestjs/graphql/dist/interfaces/gql-gateway-module-options.interface.d.ts",
         "../../../node_modules/@nestjs/graphql/dist/interfaces/gql-module-options.interface.d.ts",
@@ -12844,6 +12920,7 @@
         "../../../node_modules/@nestjs/graphql/dist/interfaces/type-options.interface.d.ts"
       ],
       "../../../node_modules/@nestjs/graphql/dist/schema-builder/metadata/property.metadata.d.ts": [
+        "../../../node_modules/@nestjs/graphql/dist/interfaces/field-middleware.interface.d.ts",
         "../../../node_modules/@nestjs/graphql/dist/interfaces/index.d.ts",
         "../../../node_modules/@nestjs/graphql/dist/interfaces/type-options.interface.d.ts",
         "../../../node_modules/@nestjs/graphql/dist/schema-builder/metadata/directive.metadata.d.ts",
@@ -16722,6 +16799,16 @@
       "../../../node_modules/zen-observable-ts/lib/zenObservable.d.ts": [
         "../../../node_modules/zen-observable-ts/lib/types.d.ts"
       ],
+      "../src/languages/languages.resolver.ts": [
+        "../src/languages/create-language.input.ts",
+        "../src/languages/language.model.ts",
+        "../src/languages/languages.service.ts"
+      ],
+      "../src/languages/languages.service.ts": [
+        "../../../node_modules/typeorm/index.d.ts",
+        "../src/languages/create-language.input.ts",
+        "../src/languages/language.entity.ts"
+      ],
       "../src/quizlet/quizlet.resolver.ts": [
         "../src/quizlet/quizlet.model.ts",
         "../src/quizlet/quizlet.service.ts"
@@ -17018,6 +17105,7 @@
       "../../../node_modules/@nestjs/graphql/dist/interfaces/class-decorator-factory.interface.d.ts",
       "../../../node_modules/@nestjs/graphql/dist/interfaces/complexity.interface.d.ts",
       "../../../node_modules/@nestjs/graphql/dist/interfaces/custom-scalar.interface.d.ts",
+      "../../../node_modules/@nestjs/graphql/dist/interfaces/field-middleware.interface.d.ts",
       "../../../node_modules/@nestjs/graphql/dist/interfaces/gql-exception-filter.interface.d.ts",
       "../../../node_modules/@nestjs/graphql/dist/interfaces/gql-gateway-module-options.interface.d.ts",
       "../../../node_modules/@nestjs/graphql/dist/interfaces/gql-module-options.interface.d.ts",
@@ -18001,6 +18089,12 @@
       "../../../node_modules/zen-observable-ts/lib/types.d.ts",
       "../../../node_modules/zen-observable-ts/lib/zenObservable.d.ts",
       "../src/app.module.ts",
+      "../src/languages/create-language.input.ts",
+      "../src/languages/language.entity.ts",
+      "../src/languages/language.model.ts",
+      "../src/languages/languages.module.ts",
+      "../src/languages/languages.resolver.ts",
+      "../src/languages/languages.service.ts",
       "../src/main.ts",
       "../src/quizlet/quizlet.model.ts",
       "../src/quizlet/quizlet.module.ts",

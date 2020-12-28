@@ -16,6 +16,8 @@ const sheets_module_1 = require("./sheets/sheets.module");
 const quizlet_module_1 = require("./quizlet/quizlet.module");
 const users_module_1 = require("./users/users.module");
 const user_entity_1 = require("./users/user.entity");
+const languages_module_1 = require("./languages/languages.module");
+const language_entity_1 = require("./languages/language.entity");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -32,7 +34,7 @@ AppModule = __decorate([
                     username: connectionOptions.user,
                     password: connectionOptions.password,
                     database: connectionOptions.database,
-                    entities: [user_entity_1.UserEntity],
+                    entities: [user_entity_1.UserEntity, language_entity_1.LanguageEntity],
                     synchronize: true,
                     logger: 'advanced-console',
                     dropSchema: process.env.NODE_ENV !== 'production',
@@ -50,6 +52,7 @@ AppModule = __decorate([
             sheets_module_1.SheetsModule,
             quizlet_module_1.QuizletModule,
             users_module_1.UsersModule,
+            languages_module_1.LanguagesModule,
         ],
         controllers: [],
         providers: [],

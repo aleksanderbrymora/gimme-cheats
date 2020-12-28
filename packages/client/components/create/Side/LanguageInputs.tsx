@@ -1,15 +1,16 @@
-import { Box, Input, Stack } from '@chakra-ui/react';
-import { observer } from 'mobx-react';
-import React from 'react';
-import { useMst } from 'models/Root';
+import { Box, Select, Stack } from '@chakra-ui/react';
 import capitalize from 'lodash.capitalize';
+import { observer } from 'mobx-react';
+import { useMst } from 'models/Root';
+import React from 'react';
 
 const LanguageInputs = observer(() => {
   const {
     sheet: { changeFromLanguage, changeToLanguage, fromLang, toLang },
   } = useMst();
+
   return (
-    <Stack spacing={3} isInline my='1rem' justifyContent='space-between'>
+    <Stack spacing={3} my='1rem' justifyContent='space-between'>
       <LanguageInput
         name='from'
         onChange={changeFromLanguage}
@@ -28,22 +29,30 @@ interface LanguageProps {
 
 const LanguageInput: React.FC<LanguageProps> = observer(
   ({ name, onChange, value }) => {
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const {
+      sheet: { languages },
+    } = useMst();
+
+    const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
       onChange(e.target.value);
     };
 
     return (
-      <Box>
+      <Stack isInline justify='space-between' align='center'>
         <label htmlFor={`language-input-${name}`}>{capitalize(name)}</label>
-        <Input
-          width='90%'
-          data-testid='language-input'
+        <Select
+          maxW='80%'
           onChange={handleChange}
-          value={value}
-          placeholder={capitalize(name)}
           id={`language-input-${name}`}
-        />
-      </Box>
+          value={value ? value : languages[0].name}
+        >
+          {languages.map((l) => (
+            <option key={l.id + name} value={l.name}>
+              {`${l.emoji} ${capitalize(l.name)}`}
+            </option>
+          ))}
+        </Select>
+      </Stack>
     );
   },
 );

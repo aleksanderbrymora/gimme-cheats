@@ -12,6 +12,7 @@ import {
 import React, { useEffect, useState } from 'react';
 import { useMst } from 'models/Root';
 import { isValidQuizletURL } from 'lib/quizlet/validateQuizletURL';
+import isoLangs from 'iso-639-1';
 
 const QUIZLET = gql`
   query quizlet($url: String!) {
@@ -55,8 +56,17 @@ const ImportFromQuizlet = () => {
         quizlet: { fromLanguage, toLanguage, title, words: quizletWords },
       } = data as QuizletType;
       sheet.changeTitle(title);
-      sheet.changeToLanguage(toLanguage);
-      sheet.changeFromLanguage(fromLanguage);
+
+      const toLang = isoLangs.getName(toLanguage).toLowerCase();
+      if (toLang && sheet.languages.find((l) => l.name === toLang)) {
+        sheet.changeToLanguage(toLang);
+      }
+
+      const fromLang = isoLangs.getName(fromLanguage).toLowerCase();
+      if (fromLang && sheet.languages.find((l) => l.name === toLang)) {
+        sheet.changeFromLanguage(fromLang);
+      }
+
       quizletWords.forEach(({ from, to }) => words.add({ from, to }));
     }
   }, [data]);
