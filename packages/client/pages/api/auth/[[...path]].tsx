@@ -71,7 +71,7 @@ SuperTokens.init({
 //
 
 const cors = Cors({
-  origin: websiteDomain,
+  origin: [websiteDomain, 'https://gimme-cheats-client.vercel.app'],
   allowedHeaders: ['content-type', ...SuperTokens.getAllCORSHeaders()],
   credentials: true,
 });
