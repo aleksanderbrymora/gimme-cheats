@@ -38,6 +38,8 @@ import { LanguageEntity } from './languages/language.entity';
       autoSchemaFile: true,
       sortSchema: true,
       cors: true,
+      tracing: true,
+      introspection: true,
     }),
     SheetsModule,
     QuizletModule,

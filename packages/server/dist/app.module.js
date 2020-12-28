@@ -48,6 +48,8 @@ AppModule = __decorate([
                 autoSchemaFile: true,
                 sortSchema: true,
                 cors: true,
+                tracing: true,
+                introspection: true,
             }),
             sheets_module_1.SheetsModule,
             quizlet_module_1.QuizletModule,
