@@ -5961,8 +5961,18 @@
         "affectsGlobalScope": false
       },
       "../src/main.ts": {
-        "version": "17d64a0044c244e54b1301993409de983a62eae59d917de631b259cf1f94acb8",
+        "version": "befc5c6cc9693cfda98c3fa5048cbd416de92d26bde00632dacdca8cdfefcd16",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
+      "../src/seed.ts": {
+        "version": "b6323f8980af12e9eb48cea56d97548da8d269ed5e5f480b1b67eff41403e456",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
+      "../src/sheets/sheet.entity.ts": {
+        "version": "6963fc845a1f5064fc26f8466999436d2f439025789ad54ccfd4f85512656177",
+        "signature": "d606d05902963def655e8d6d57bb0864e965f00ab58d1fdc036d375aa4bd5606",
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/anymatch/index.d.ts": {
@@ -6034,6 +6044,11 @@
         "version": "274bda283ef15f4205603ca9967313fc013aa77ae89f2cbeab5fbd51439e96ed",
         "signature": "274bda283ef15f4205603ca9967313fc013aa77ae89f2cbeab5fbd51439e96ed",
         "affectsGlobalScope": false
+      },
+      "../../../node_modules/@types/faker/index.d.ts": {
+        "version": "5ddf1c1c220a206c584a71cbbedc1a85e25d75bcfadd875a41cee362713f01dd",
+        "signature": "5ddf1c1c220a206c584a71cbbedc1a85e25d75bcfadd875a41cee362713f01dd",
+        "affectsGlobalScope": true
       },
       "../../../node_modules/@types/minimatch/index.d.ts": {
         "version": "1d1e6bd176eee5970968423d7e215bfd66828b6db8d54d17afec05a831322633",
@@ -11593,6 +11608,7 @@
         "../src/languages/language.model.ts"
       ],
       "../src/main.ts": [
+        "../../../node_modules/@nestjs/common/index.d.ts",
         "../../../node_modules/@nestjs/core/index.d.ts",
         "../src/app.module.ts"
       ],
@@ -11614,6 +11630,17 @@
         "../../../node_modules/axios/index.d.ts",
         "../../../node_modules/node-html-parser/dist/index.d.ts",
         "../src/quizlet/quizlet.model.ts"
+      ],
+      "../src/seed.ts": [
+        "../../../node_modules/nestjs-easyconfig/index.d.ts",
+        "../../../node_modules/pg-connection-string/index.d.ts",
+        "../../../node_modules/typeorm/index.d.ts",
+        "../src/languages/language.entity.ts",
+        "../src/languages/languages.service.ts",
+        "../src/users/user.entity.ts"
+      ],
+      "../src/sheets/sheet.entity.ts": [
+        "../../../node_modules/typeorm/index.d.ts"
       ],
       "../src/sheets/sheet.model.ts": [
         "../../../node_modules/@nestjs/graphql/index.d.ts"
@@ -17219,6 +17246,7 @@
       "../../../node_modules/@types/estree/index.d.ts",
       "../../../node_modules/@types/express-serve-static-core/index.d.ts",
       "../../../node_modules/@types/express/index.d.ts",
+      "../../../node_modules/@types/faker/index.d.ts",
       "../../../node_modules/@types/fs-capacitor/index.d.ts",
       "../../../node_modules/@types/glob/index.d.ts",
       "../../../node_modules/@types/graceful-fs/index.d.ts",
@@ -18100,6 +18128,8 @@
       "../src/quizlet/quizlet.module.ts",
       "../src/quizlet/quizlet.resolver.ts",
       "../src/quizlet/quizlet.service.ts",
+      "../src/seed.ts",
+      "../src/sheets/sheet.entity.ts",
       "../src/sheets/sheet.model.ts",
       "../src/sheets/sheets.module.ts",
       "../src/sheets/sheets.resolver.ts",

@@ -1,0 +1,46 @@
+import { EasyconfigModule } from 'nestjs-easyconfig';
+import { parse as parseDBString } from 'pg-connection-string';
+import { createConnection } from 'typeorm';
+import { LanguageEntity } from './languages/language.entity';
+import { LanguagesService } from './languages/languages.service';
+import { UserEntity } from './users/user.entity';
+
+const run = async (): Promise<void> => {
+  EasyconfigModule.register({ path: '.env' });
+  const connectionString = process.env.DATABASE_URL || 'localhost';
+  const connectionOptions = parseDBString(connectionString);
+
+  const connection = await createConnection({
+    type: 'postgres',
+    host: connectionOptions.host as string,
+    port: parseInt(connectionOptions.port || '5432'),
+    username: connectionOptions.user,
+    password: connectionOptions.password,
+    database: connectionOptions.database as string,
+    entities: [UserEntity, LanguageEntity],
+    synchronize: true,
+    logger: 'advanced-console',
+    dropSchema: process.env.NODE_ENV !== 'production',
+    cache: false,
+    logging: 'all',
+  });
+  const languageService = new LanguagesService(
+    connection.getRepository(LanguageEntity),
+  );
+
+  const languageData = [
+    { emoji: '🇨🇳', name: 'chinese' },
+    { emoji: '🇪🇸', name: 'spanish' },
+    { emoji: '🏴󠁧󠁢󠁥󠁮󠁧󠁿', name: 'english' },
+    { emoji: '🇵🇱', name: 'polish' },
+    { emoji: '🇮🇳', name: 'hindi' },
+    { emoji: '🇵🇹', name: 'portugese' },
+    { emoji: '📅', name: 'date' },
+    { emoji: '🇷🇺', name: 'russian' },
+    { emoji: '🇯🇵', name: 'japanese' },
+    { emoji: '🇫🇷', name: 'french' },
+  ];
+  await languageService.createLanguages(languageData);
+};
+
+run().then(() => console.log('Should be seeded now'));
