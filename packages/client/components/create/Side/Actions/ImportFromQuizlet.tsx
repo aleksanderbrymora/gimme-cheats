@@ -59,17 +59,13 @@ const ImportFromQuizlet = () => {
 
       const toLang = isoLangs.getName(toLanguage).toLowerCase();
       if (toLang && sheet.languages.find((l) => l.name === toLang)) {
-        console.log('To Language:' + toLang);
         sheet.changeToLanguage(toLang);
       }
 
       const fromLang = isoLangs.getName(fromLanguage).toLowerCase();
       if (fromLang && sheet.languages.find((l) => l.name === toLang)) {
-        console.log('From Language:' + fromLang);
         sheet.changeFromLanguage(fromLang);
       }
-
-      console.log({ toLang, fromLang });
 
       quizletWords.forEach(({ from, to }) => words.add({ from, to }));
     }

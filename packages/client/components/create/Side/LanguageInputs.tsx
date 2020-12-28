@@ -9,8 +9,6 @@ const LanguageInputs = observer(() => {
     sheet: { changeFromLanguage, changeToLanguage, fromLang, toLang },
   } = useMst();
 
-  console.log({ fromLang, toLang });
-
   return (
     <Stack spacing={3} my='1rem' justifyContent='space-between'>
       <LanguageInput
@@ -38,8 +36,6 @@ const LanguageInput: React.FC<LanguageProps> = observer(
     const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
       onChange(e.target.value);
     };
-
-    console.log({ value });
 
     return (
       <Stack isInline justify='space-between' align='center'>
