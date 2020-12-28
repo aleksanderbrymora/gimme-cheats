@@ -13,7 +13,9 @@ const axios_1 = require("axios");
 const node_html_parser_1 = require("node-html-parser");
 let QuizletService = class QuizletService {
     async getQuizletPage(url) {
-        return axios_1.default.get(url);
+        const body = await axios_1.default.get(url);
+        console.log(body);
+        return body;
     }
     async getQuizletData(url) {
         const Q = new quizlet_model_1.Quizlet();
@@ -34,6 +36,7 @@ let QuizletService = class QuizletService {
         Q.fromLanguage = fromLang;
         Q.toLanguage = toLang;
         Q.title = root.querySelector('h1').innerText;
+        console.log(Q);
         return Q;
     }
 };

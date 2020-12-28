@@ -5266,7 +5266,7 @@
         "affectsGlobalScope": false
       },
       "../src/quizlet/quizlet.service.ts": {
-        "version": "9efe9974f1a117e595c6e5609ca4d7f711acec716c28466a2338e8f7b6c08d4d",
+        "version": "9ba1484a555ee2151fc139aeece03ec377d0c03dd5520a5090ddf77ab94be906",
         "signature": "6b4eb444e3429f0445b7d7e7ef33d669186fed913f367c9c2d49da34d1145ea5",
         "affectsGlobalScope": false
       },

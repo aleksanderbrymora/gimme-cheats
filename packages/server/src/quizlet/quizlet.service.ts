@@ -6,7 +6,9 @@ import { parse } from 'node-html-parser';
 @Injectable()
 export class QuizletService {
   private async getQuizletPage(url: string) {
-    return axios.get(url);
+    const body = await axios.get(url);
+    console.log(body);
+    return body;
   }
 
   async getQuizletData(url: string) {
@@ -37,6 +39,8 @@ export class QuizletService {
 
     // Getting the title
     Q.title = root.querySelector('h1').innerText;
+
+    console.log(Q);
 
     return Q;
   }
