@@ -2,18 +2,18 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { CreateLanguageInput } from './create-language.input';
-import { LanguageEntity } from './language.entity';
+import { Language } from './language.model';
 
 @Injectable()
 export class LanguagesService {
   constructor(
-    @InjectRepository(LanguageEntity)
-    private languageRepository: Repository<LanguageEntity>,
+    @InjectRepository(Language)
+    private languageRepository: Repository<Language>,
   ) {}
 
   async createLanguage(
     createLanguageInput: CreateLanguageInput,
-  ): Promise<LanguageEntity> {
+  ): Promise<Language> {
     const { emoji, name } = createLanguageInput;
     const language = this.languageRepository.create({ name, emoji });
     return this.languageRepository.save(language);
@@ -26,7 +26,7 @@ export class LanguagesService {
     await query.insert().values(createLanguageInput).execute();
   }
 
-  async getAllLanguages(): Promise<LanguageEntity[]> {
+  async getAllLanguages(): Promise<Language[]> {
     return this.languageRepository.find({});
   }
 }

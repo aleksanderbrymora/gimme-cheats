@@ -1,7 +1,7 @@
 import { EasyconfigModule } from 'nestjs-easyconfig';
 import { parse as parseDBString } from 'pg-connection-string';
 import { createConnection } from 'typeorm';
-import { LanguageEntity } from './languages/language.entity';
+import { Language } from './languages/language.model';
 import { LanguagesService } from './languages/languages.service';
 import { UserEntity } from './users/user.entity';
 
@@ -18,7 +18,7 @@ export const seed = async (): Promise<void> => {
     username: connectionOptions.user,
     password: connectionOptions.password,
     database: connectionOptions.database as string,
-    entities: [UserEntity, LanguageEntity],
+    entities: [UserEntity, Language],
     synchronize: true,
     logger: 'advanced-console',
     dropSchema: process.env.NODE_ENV !== 'production',
@@ -26,7 +26,7 @@ export const seed = async (): Promise<void> => {
     logging: 'all',
   });
   const languageService = new LanguagesService(
-    connection.getRepository(LanguageEntity),
+    connection.getRepository(Language),
   );
 
   const languageData = [
