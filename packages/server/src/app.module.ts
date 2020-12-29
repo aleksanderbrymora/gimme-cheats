@@ -9,6 +9,7 @@ import { UsersModule } from './users/users.module';
 import { UserEntity } from './users/user.entity';
 import { LanguagesModule } from './languages/languages.module';
 import { LanguageEntity } from './languages/language.entity';
+import { Sheet } from './sheets/sheet.model';
 
 @Module({
   imports: [
@@ -24,7 +25,7 @@ import { LanguageEntity } from './languages/language.entity';
         username: connectionOptions.user,
         password: connectionOptions.password,
         database: connectionOptions.database as string,
-        entities: [UserEntity, LanguageEntity],
+        entities: [UserEntity, LanguageEntity, Sheet],
         synchronize: true,
         logger: 'advanced-console',
         dropSchema: process.env.NODE_ENV !== 'production',

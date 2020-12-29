@@ -1,8 +1,9 @@
 import { Field, Int, ObjectType } from '@nestjs/graphql';
 import { IsEmail } from 'class-validator';
+import { Base } from 'src/base/base.entity';
 
 @ObjectType()
-export class User {
+export class User extends Base {
   @Field()
   username: string;
 

@@ -18,6 +18,7 @@ const users_module_1 = require("./users/users.module");
 const user_entity_1 = require("./users/user.entity");
 const languages_module_1 = require("./languages/languages.module");
 const language_entity_1 = require("./languages/language.entity");
+const sheet_model_1 = require("./sheets/sheet.model");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -34,7 +35,7 @@ AppModule = __decorate([
                     username: connectionOptions.user,
                     password: connectionOptions.password,
                     database: connectionOptions.database,
-                    entities: [user_entity_1.UserEntity, language_entity_1.LanguageEntity],
+                    entities: [user_entity_1.UserEntity, language_entity_1.LanguageEntity, sheet_model_1.Sheet],
                     synchronize: true,
                     logger: 'advanced-console',
                     dropSchema: process.env.NODE_ENV !== 'production',

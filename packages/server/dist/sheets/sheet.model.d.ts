@@ -1,5 +1,5 @@
-export declare class Sheet {
-    id: number;
+import { Base } from '../base/base.entity';
+export declare class Sheet extends Base {
     title: string;
     forkedTimes: number;
     lookedAtTimes: number;

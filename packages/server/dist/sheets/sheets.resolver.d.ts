@@ -3,5 +3,5 @@ import { Sheet } from './sheet.model';
 export declare class SheetsResolver {
     private readonly sheetsService;
     constructor(sheetsService: SheetsService);
-    sheet(): Promise<Sheet>;
+    sheets(): Promise<Sheet[]>;
 }

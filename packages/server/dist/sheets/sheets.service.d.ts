@@ -1,7 +1,7 @@
 import { Repository } from 'typeorm';
-import { SheetEntity } from './sheet.entity';
+import { Sheet } from './sheet.model';
 export declare class SheetsService {
     private sheetRepository;
-    constructor(sheetRepository: Repository<SheetEntity>);
-    getAllSheets(): Promise<SheetEntity[]>;
+    constructor(sheetRepository: Repository<Sheet>);
+    getAllSheets(): Promise<Sheet[]>;
 }

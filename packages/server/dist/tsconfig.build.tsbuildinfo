@@ -5190,21 +5190,6 @@
         "signature": "6873222e432688db00cbaa69aedd8ac857ec78909cacf87a648119841bfb61f0",
         "affectsGlobalScope": false
       },
-      "../src/base/base.entity.ts": {
-        "version": "c1eb3c0aed93eaf4a9a76d3bb45e2d19a042965d322ef0fc9e212c6559cb86c2",
-        "signature": "ba457d988907541edd3f2fbfde3399e858dd1b2893275b1d894ad282d216c988",
-        "affectsGlobalScope": false
-      },
-      "../src/sheets/sheet.entity.ts": {
-        "version": "61ca705f5e641501f5f67743eba4f1a4b2f9abbed33b37a156491e6d6da91f02",
-        "signature": "7314f22a63d499371ad8e2c96f90f5eb98c27762e8a74961ce763ff5de8fcb59",
-        "affectsGlobalScope": false
-      },
-      "../src/sheets/sheets.service.ts": {
-        "version": "5034de330845b73e13f115a314cb2efe3e05ac7fc21a0cb7e43f556056c88a6d",
-        "signature": "7077b33905659f6ec7a857007064b58703be0e3f6b11c5b004ce11c144bb0eb3",
-        "affectsGlobalScope": false
-      },
       "../../../node_modules/class-validator/types/validation/ValidationError.d.ts": {
         "version": "d224f2ef464cf2a544dcf6be6b416db5563aa5ca4c94e2a1d93bf3765c1f77cb",
         "signature": "d224f2ef464cf2a544dcf6be6b416db5563aa5ca4c94e2a1d93bf3765c1f77cb",
@@ -5820,18 +5805,28 @@
         "signature": "1d5f30cbd06ffa2aab22346b087e140f069851c17b91189be8d1e168d53f9f93",
         "affectsGlobalScope": false
       },
+      "../src/base/base.entity.ts": {
+        "version": "35b35c4ef75a98bfdc9110dda233d621019d6b13b5fb21a46f517d2ac1ee9947",
+        "signature": "c436bbf78af8729630348095e2509c14941cd7c5eb191af5fc5ca5684f324dfb",
+        "affectsGlobalScope": false
+      },
       "../src/sheets/sheet.model.ts": {
-        "version": "f99ab88b988f6f2515427b6489e27dcb91160141c8e7b4797c8c30ed6687fa87",
-        "signature": "06b84f9d634844fa87d9967bd3fd9b840f3acdccb5aa58e2c0cfad108488d8a6",
+        "version": "0a9beea248aa8f35c17ab4e270fe80f13ff15b6327850df7a09a703ef2941c26",
+        "signature": "c2337599c12874d7cf903c36b42f67cc2caf9af94ed1ebf27c23a46c7b981f8e",
+        "affectsGlobalScope": false
+      },
+      "../src/sheets/sheets.service.ts": {
+        "version": "78b572b3d97eb7ad324c18310ed4bbfa2e86c28fc6ea031410456672e62f6328",
+        "signature": "3f6a812609b1ccb84b5106d36ffe6f5feb715304ef86cbbc80b99f37d1cc3212",
         "affectsGlobalScope": false
       },
       "../src/sheets/sheets.resolver.ts": {
-        "version": "d0a5717b2a9ec473349268a23e60a564c629357243ce0b49cd3a26dbae5575a7",
-        "signature": "235fcc5ed071adebd1ae6c07e86b20d79fb2b2398b9ea060ab709f254e24d5e8",
+        "version": "ea9e3ec912b6fcb9d44382297c7dde9983baf75973336610f2d975ebb7fa929e",
+        "signature": "00731c2754aabc209ffadc6bc2e958dd3cc8540d252dd86ca0ae0cf34bcbe057",
         "affectsGlobalScope": false
       },
       "../src/sheets/sheets.module.ts": {
-        "version": "228dfce7f77ebc406a0b7e6cac32c2a692e3bc935cdb1414b47ad487c2720c34",
+        "version": "71abb9b9fcb19762ca67f3e751e465219ee7d9df48e12a9edbed966ffccbae09",
         "signature": "df6d29f1b4d3a962eb86b512bde1e6748a1cd940e16a13e2644d18a9da2386f2",
         "affectsGlobalScope": false
       },
@@ -5921,8 +5916,8 @@
         "affectsGlobalScope": false
       },
       "../src/users/user.model.ts": {
-        "version": "ae1307a6e68076c5696f035caf0459909aeeb7ee56141506a65628f90bf7dda8",
-        "signature": "7ff4c881e4ec3a519b858dc431d2bc7ed92539a40a7d031064a220d940524d4a",
+        "version": "255dbef973523df890f162d5d53ef159340da385779d071bb26965eb1bca4922",
+        "signature": "7a1bc6bfcb28cbc215e1c0a005d1718ce29343148f3dc53680640110cfbb53c9",
         "affectsGlobalScope": false
       },
       "../src/users/users.resolver.ts": {
@@ -5966,7 +5961,7 @@
         "affectsGlobalScope": false
       },
       "../src/app.module.ts": {
-        "version": "c654f91fe6073ad99dc64a1f73e9f4000a4e45bc6c2fe777b490a77ece562e5f",
+        "version": "f94450724cddb654e6cd2047ad97c984b359201c913e8f6eba265c06f4d66adf",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
@@ -5978,6 +5973,11 @@
       "../src/main.ts": {
         "version": "6d4d902a5818cf545db58a61f3f3e10a1b1c72a05af120e3ad6966537e9b8bde",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
+      "../src/sheets/sheet.entity.ts": {
+        "version": "173d4887c2dbf80701a05734c01deab85b421f092571f5ccefb3a271d8bf8c24",
+        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/anymatch/index.d.ts": {
@@ -11578,11 +11578,13 @@
         "../src/languages/language.entity.ts",
         "../src/languages/languages.module.ts",
         "../src/quizlet/quizlet.module.ts",
+        "../src/sheets/sheet.model.ts",
         "../src/sheets/sheets.module.ts",
         "../src/users/user.entity.ts",
         "../src/users/users.module.ts"
       ],
       "../src/base/base.entity.ts": [
+        "../../../node_modules/@nestjs/graphql/index.d.ts",
         "../../../node_modules/typeorm/index.d.ts"
       ],
       "../src/languages/create-language.input.ts": [
@@ -11648,18 +11650,16 @@
         "../src/languages/languages.service.ts",
         "../src/users/user.entity.ts"
       ],
-      "../src/sheets/sheet.entity.ts": [
-        "../../../node_modules/typeorm/index.d.ts",
-        "../src/base/base.entity.ts"
-      ],
       "../src/sheets/sheet.model.ts": [
         "../../../node_modules/@nestjs/graphql/index.d.ts",
-        "../../../node_modules/class-validator/types/index.d.ts"
+        "../../../node_modules/class-validator/types/index.d.ts",
+        "../../../node_modules/typeorm/index.d.ts",
+        "../src/base/base.entity.ts"
       ],
       "../src/sheets/sheets.module.ts": [
         "../../../node_modules/@nestjs/common/index.d.ts",
         "../../../node_modules/@nestjs/typeorm/index.d.ts",
-        "../src/sheets/sheet.entity.ts",
+        "../src/sheets/sheet.model.ts",
         "../src/sheets/sheets.resolver.ts",
         "../src/sheets/sheets.service.ts"
       ],
@@ -11672,7 +11672,7 @@
         "../../../node_modules/@nestjs/common/index.d.ts",
         "../../../node_modules/@nestjs/typeorm/index.d.ts",
         "../../../node_modules/typeorm/index.d.ts",
-        "../src/sheets/sheet.entity.ts"
+        "../src/sheets/sheet.model.ts"
       ],
       "../src/users/create-user.input.ts": [
         "../../../node_modules/@nestjs/graphql/index.d.ts",
@@ -11684,7 +11684,8 @@
       ],
       "../src/users/user.model.ts": [
         "../../../node_modules/@nestjs/graphql/index.d.ts",
-        "../../../node_modules/class-validator/types/index.d.ts"
+        "../../../node_modules/class-validator/types/index.d.ts",
+        "../src/base/base.entity.ts"
       ],
       "../src/users/users.module.ts": [
         "../../../node_modules/@nestjs/common/index.d.ts",
@@ -16860,7 +16861,7 @@
       "../src/quizlet/quizlet.service.ts": [
         "../src/quizlet/quizlet.model.ts"
       ],
-      "../src/sheets/sheet.entity.ts": [
+      "../src/sheets/sheet.model.ts": [
         "../src/base/base.entity.ts"
       ],
       "../src/sheets/sheets.resolver.ts": [
@@ -16869,9 +16870,12 @@
       ],
       "../src/sheets/sheets.service.ts": [
         "../../../node_modules/typeorm/index.d.ts",
-        "../src/sheets/sheet.entity.ts"
+        "../src/sheets/sheet.model.ts"
       ],
       "../src/users/user.entity.ts": [
+        "../src/base/base.entity.ts"
+      ],
+      "../src/users/user.model.ts": [
         "../src/base/base.entity.ts"
       ],
       "../src/users/users.resolver.ts": [
@@ -18161,19 +18165,7 @@
       "../src/sheets/sheet.entity.ts",
       "../src/sheets/sheet.model.ts",
       "../src/sheets/sheets.module.ts",
-      [
-        "../src/sheets/sheets.resolver.ts",
-        [
-          {
-            "file": "../src/sheets/sheets.resolver.ts",
-            "start": 330,
-            "length": 41,
-            "code": 2740,
-            "category": 1,
-            "messageText": "Type 'SheetEntity[]' is missing the following properties from type 'Sheet': id, title, forkedTimes, lookedAtTimes, and 2 more."
-          }
-        ]
-      ],
+      "../src/sheets/sheets.resolver.ts",
       "../src/sheets/sheets.service.ts",
       "../src/users/create-user.input.ts",
       "../src/users/user.entity.ts",

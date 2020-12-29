@@ -16,7 +16,7 @@ exports.SheetsService = void 0;
 const common_1 = require("@nestjs/common");
 const typeorm_1 = require("@nestjs/typeorm");
 const typeorm_2 = require("typeorm");
-const sheet_entity_1 = require("./sheet.entity");
+const sheet_model_1 = require("./sheet.model");
 let SheetsService = class SheetsService {
     constructor(sheetRepository) {
         this.sheetRepository = sheetRepository;
@@ -27,7 +27,7 @@ let SheetsService = class SheetsService {
 };
 SheetsService = __decorate([
     common_1.Injectable(),
-    __param(0, typeorm_1.InjectRepository(sheet_entity_1.SheetEntity)),
+    __param(0, typeorm_1.InjectRepository(sheet_model_1.Sheet)),
     __metadata("design:paramtypes", [typeorm_2.Repository])
 ], SheetsService);
 exports.SheetsService = SheetsService;

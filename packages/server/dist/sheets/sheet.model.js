@@ -12,38 +12,42 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Sheet = void 0;
 const graphql_1 = require("@nestjs/graphql");
 const class_validator_1 = require("class-validator");
-let Sheet = class Sheet {
+const typeorm_1 = require("typeorm");
+const base_entity_1 = require("../base/base.entity");
+let Sheet = class Sheet extends base_entity_1.Base {
 };
-__decorate([
-    graphql_1.Field(() => graphql_1.Int),
-    __metadata("design:type", Number)
-], Sheet.prototype, "id", void 0);
 __decorate([
     class_validator_1.Length(1, 50),
     graphql_1.Field(),
+    typeorm_1.Column({ type: 'varchar', length: 50 }),
     __metadata("design:type", String)
 ], Sheet.prototype, "title", void 0);
 __decorate([
     class_validator_1.Min(0),
     graphql_1.Field(() => graphql_1.Int, { defaultValue: 0 }),
+    typeorm_1.Column({ default: 0, type: 'int' }),
     __metadata("design:type", Number)
 ], Sheet.prototype, "forkedTimes", void 0);
 __decorate([
     class_validator_1.Min(0),
     graphql_1.Field(() => graphql_1.Int, { defaultValue: 0 }),
+    typeorm_1.Column({ default: 0, type: 'int' }),
     __metadata("design:type", Number)
 ], Sheet.prototype, "lookedAtTimes", void 0);
 __decorate([
     class_validator_1.Min(0),
     graphql_1.Field(() => graphql_1.Int, { defaultValue: 0 }),
+    typeorm_1.Column({ default: 0, type: 'int' }),
     __metadata("design:type", Number)
 ], Sheet.prototype, "points", void 0);
 __decorate([
     graphql_1.Field(() => Boolean, { defaultValue: false }),
+    typeorm_1.Column({ default: false }),
     __metadata("design:type", Boolean)
 ], Sheet.prototype, "containsProfanity", void 0);
 Sheet = __decorate([
-    graphql_1.ObjectType()
+    graphql_1.ObjectType(),
+    typeorm_1.Entity()
 ], Sheet);
 exports.Sheet = Sheet;
 //# sourceMappingURL=sheet.model.js.map

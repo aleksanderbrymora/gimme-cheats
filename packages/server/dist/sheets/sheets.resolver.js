@@ -17,7 +17,7 @@ let SheetsResolver = class SheetsResolver {
     constructor(sheetsService) {
         this.sheetsService = sheetsService;
     }
-    async sheet() {
+    async sheets() {
         return this.sheetsService.getAllSheets();
     }
 };
@@ -26,7 +26,7 @@ __decorate([
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Promise)
-], SheetsResolver.prototype, "sheet", null);
+], SheetsResolver.prototype, "sheets", null);
 SheetsResolver = __decorate([
     graphql_1.Resolver(),
     __metadata("design:paramtypes", [sheets_service_1.SheetsService])

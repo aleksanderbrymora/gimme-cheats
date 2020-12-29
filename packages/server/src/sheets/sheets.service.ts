@@ -1,16 +1,16 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { SheetEntity } from './sheet.entity';
+import { Sheet } from './sheet.model';
 
 @Injectable()
 export class SheetsService {
   constructor(
-    @InjectRepository(SheetEntity)
-    private sheetRepository: Repository<SheetEntity>,
+    @InjectRepository(Sheet)
+    private sheetRepository: Repository<Sheet>,
   ) {}
 
-  async getAllSheets(): Promise<SheetEntity[]> {
+  async getAllSheets(): Promise<Sheet[]> {
     return this.sheetRepository.find({});
   }
 }

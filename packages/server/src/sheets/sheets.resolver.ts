@@ -7,7 +7,7 @@ export class SheetsResolver {
   constructor(private readonly sheetsService: SheetsService) {}
 
   @Query(() => [Sheet], { name: 'sheets' })
-  async sheet(): Promise<Sheet> {
+  async sheets(): Promise<Sheet[]> {
     return this.sheetsService.getAllSheets();
   }
 }
