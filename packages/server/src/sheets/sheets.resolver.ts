@@ -5,10 +5,9 @@ import { Sheet } from './sheet.model';
 @Resolver()
 export class SheetsResolver {
   constructor(private readonly sheetsService: SheetsService) {}
-  @Query(() => Sheet)
-  async sheet() {
-    return {
-      content: 'sup',
-    };
+
+  @Query(() => [Sheet], { name: 'sheets' })
+  async sheet(): Promise<Sheet> {
+    return this.sheetsService.getAllSheets();
   }
 }

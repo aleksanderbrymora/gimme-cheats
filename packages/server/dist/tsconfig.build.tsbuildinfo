@@ -5190,104 +5190,19 @@
         "signature": "6873222e432688db00cbaa69aedd8ac857ec78909cacf87a648119841bfb61f0",
         "affectsGlobalScope": false
       },
-      "../src/sheets/sheets.service.ts": {
-        "version": "11317c020bc94c6ab6dbf2cc6a3e67b556c42db1b0b855c127113f76bfbd6e38",
-        "signature": "a09378c490d11008c78e8468577d2225382452a42638b1425ea7e5b3f8b98e19",
-        "affectsGlobalScope": false
-      },
-      "../src/sheets/sheet.model.ts": {
-        "version": "c0bec0bbe9c4cf662ae34212f73a8d26c9ea64e671de4a8bd8d8eb0c92297aa1",
-        "signature": "bae3b30e929c0f646ccc595d6ec420cac381ff9a285042814674266e1bd92aae",
-        "affectsGlobalScope": false
-      },
-      "../src/sheets/sheets.resolver.ts": {
-        "version": "84cc02610c0d9bd8aa057135b08c81ced39d66ea21b6051528bf7f9cba62926a",
-        "signature": "f0a9fb04ba8cf55fcae7def9e57744f3f0672c87df99aba99f24b9a1b611be1c",
-        "affectsGlobalScope": false
-      },
-      "../src/sheets/sheets.module.ts": {
-        "version": "e2c1dabb6ab09ba26023c6b7c0edca5926d12bf3d12752d9d9a41f8719b28954",
-        "signature": "df6d29f1b4d3a962eb86b512bde1e6748a1cd940e16a13e2644d18a9da2386f2",
-        "affectsGlobalScope": false
-      },
-      "../src/quizlet/quizlet.model.ts": {
-        "version": "0c2e425a78f0d7a6bec591ad72ef148e21271d64b5fb4333a83194f9950ce158",
-        "signature": "dffec7220042c02720a5ff517530560b21ac47b39887b53bad549d5dc7f0d90d",
-        "affectsGlobalScope": false
-      },
-      "../../../node_modules/node-html-parser/dist/nodes/type.d.ts": {
-        "version": "59a50afa27798d65c7a71e987ee0d9ce9e114bb06bac138a73f3c49c12b63487",
-        "signature": "59a50afa27798d65c7a71e987ee0d9ce9e114bb06bac138a73f3c49c12b63487",
-        "affectsGlobalScope": false
-      },
-      "../../../node_modules/node-html-parser/dist/nodes/node.d.ts": {
-        "version": "e7113d9872837e7a2cc2aaae7033ff4b16afd013ccab83f2053f918c826beea1",
-        "signature": "e7113d9872837e7a2cc2aaae7033ff4b16afd013ccab83f2053f918c826beea1",
-        "affectsGlobalScope": false
-      },
-      "../../../node_modules/node-html-parser/dist/nodes/comment.d.ts": {
-        "version": "7a437c0925589cfc0cac6337a047066f6ba52cd384d0012a0eea68c051011ac7",
-        "signature": "7a437c0925589cfc0cac6337a047066f6ba52cd384d0012a0eea68c051011ac7",
-        "affectsGlobalScope": false
-      },
-      "../../../node_modules/node-html-parser/dist/matcher.d.ts": {
-        "version": "e56d23f455b13c1eff2747735435f750c3e4fd78da7648d9836c2d53d8bc458c",
-        "signature": "e56d23f455b13c1eff2747735435f750c3e4fd78da7648d9836c2d53d8bc458c",
-        "affectsGlobalScope": false
-      },
-      "../../../node_modules/node-html-parser/dist/nodes/html.d.ts": {
-        "version": "b5d60c2b09ab2b94a74650305386670df7c0b64e5c392bd1a0211afe28c188a2",
-        "signature": "b5d60c2b09ab2b94a74650305386670df7c0b64e5c392bd1a0211afe28c188a2",
-        "affectsGlobalScope": false
-      },
-      "../../../node_modules/node-html-parser/dist/parse.d.ts": {
-        "version": "2f917b00067815de93b5b05f5a1092351eccfb18561ad2b32a3747ecce68e779",
-        "signature": "2f917b00067815de93b5b05f5a1092351eccfb18561ad2b32a3747ecce68e779",
-        "affectsGlobalScope": false
-      },
-      "../../../node_modules/node-html-parser/dist/valid.d.ts": {
-        "version": "56170e6aa335d7d939d2f0d3f5664aa451f27fdeaf04e6daca73ddcd2191a9a5",
-        "signature": "56170e6aa335d7d939d2f0d3f5664aa451f27fdeaf04e6daca73ddcd2191a9a5",
-        "affectsGlobalScope": false
-      },
-      "../../../node_modules/node-html-parser/dist/nodes/text.d.ts": {
-        "version": "8c830d50f06337f2efb94d9b01014cd4b242029fc000d84b4f188db87e440372",
-        "signature": "8c830d50f06337f2efb94d9b01014cd4b242029fc000d84b4f188db87e440372",
-        "affectsGlobalScope": false
-      },
-      "../../../node_modules/node-html-parser/dist/index.d.ts": {
-        "version": "42f89918592edc388f99a2a18aaf92b9e9be279485329b44919a706e32897515",
-        "signature": "42f89918592edc388f99a2a18aaf92b9e9be279485329b44919a706e32897515",
-        "affectsGlobalScope": false
-      },
-      "../../../node_modules/axios/index.d.ts": {
-        "version": "0d892f035dbee4534f0ba096407136877595ca592f67ec9bb8a5c912b9c967e8",
-        "signature": "0d892f035dbee4534f0ba096407136877595ca592f67ec9bb8a5c912b9c967e8",
-        "affectsGlobalScope": false
-      },
-      "../src/quizlet/quizlet.service.ts": {
-        "version": "c4f3769378c7a277b9893552416274ca8a31a4f9c17c535add945ebdc5a34848",
-        "signature": "6b4eb444e3429f0445b7d7e7ef33d669186fed913f367c9c2d49da34d1145ea5",
-        "affectsGlobalScope": false
-      },
-      "../src/quizlet/quizlet.resolver.ts": {
-        "version": "af46a618c84972a83fb2e284101369b495065d952d0f892406932c3f4416d29c",
-        "signature": "27f5c0322e3033e16ed2cd581db086ca5c142a2bb742e1efb960ceb5aba7e41d",
-        "affectsGlobalScope": false
-      },
-      "../src/quizlet/quizlet.module.ts": {
-        "version": "163af55b301cc6e5f7443ba1df22d097468f945829ebda518a9d4c8c5bd0d612",
-        "signature": "e212f554388f184b652c4fafc34471e484242b0ba164a87553023ee9684c4a2a",
-        "affectsGlobalScope": false
-      },
       "../src/base/base.entity.ts": {
         "version": "c1eb3c0aed93eaf4a9a76d3bb45e2d19a042965d322ef0fc9e212c6559cb86c2",
         "signature": "ba457d988907541edd3f2fbfde3399e858dd1b2893275b1d894ad282d216c988",
         "affectsGlobalScope": false
       },
-      "../src/users/user.entity.ts": {
-        "version": "9ee4ea3eaf50a2e1ff89299709acdabda23883ce328549018d42150653b476d6",
-        "signature": "f37e45ecb2b9dbacd38f10c03a11b3442a970fc553ced6eb489dae182815a8eb",
+      "../src/sheets/sheet.entity.ts": {
+        "version": "61ca705f5e641501f5f67743eba4f1a4b2f9abbed33b37a156491e6d6da91f02",
+        "signature": "7314f22a63d499371ad8e2c96f90f5eb98c27762e8a74961ce763ff5de8fcb59",
+        "affectsGlobalScope": false
+      },
+      "../src/sheets/sheets.service.ts": {
+        "version": "5034de330845b73e13f115a314cb2efe3e05ac7fc21a0cb7e43f556056c88a6d",
+        "signature": "7077b33905659f6ec7a857007064b58703be0e3f6b11c5b004ce11c144bb0eb3",
         "affectsGlobalScope": false
       },
       "../../../node_modules/class-validator/types/validation/ValidationError.d.ts": {
@@ -5905,6 +5820,96 @@
         "signature": "1d5f30cbd06ffa2aab22346b087e140f069851c17b91189be8d1e168d53f9f93",
         "affectsGlobalScope": false
       },
+      "../src/sheets/sheet.model.ts": {
+        "version": "f99ab88b988f6f2515427b6489e27dcb91160141c8e7b4797c8c30ed6687fa87",
+        "signature": "06b84f9d634844fa87d9967bd3fd9b840f3acdccb5aa58e2c0cfad108488d8a6",
+        "affectsGlobalScope": false
+      },
+      "../src/sheets/sheets.resolver.ts": {
+        "version": "d0a5717b2a9ec473349268a23e60a564c629357243ce0b49cd3a26dbae5575a7",
+        "signature": "235fcc5ed071adebd1ae6c07e86b20d79fb2b2398b9ea060ab709f254e24d5e8",
+        "affectsGlobalScope": false
+      },
+      "../src/sheets/sheets.module.ts": {
+        "version": "228dfce7f77ebc406a0b7e6cac32c2a692e3bc935cdb1414b47ad487c2720c34",
+        "signature": "df6d29f1b4d3a962eb86b512bde1e6748a1cd940e16a13e2644d18a9da2386f2",
+        "affectsGlobalScope": false
+      },
+      "../src/quizlet/quizlet.model.ts": {
+        "version": "0c2e425a78f0d7a6bec591ad72ef148e21271d64b5fb4333a83194f9950ce158",
+        "signature": "dffec7220042c02720a5ff517530560b21ac47b39887b53bad549d5dc7f0d90d",
+        "affectsGlobalScope": false
+      },
+      "../../../node_modules/node-html-parser/dist/nodes/type.d.ts": {
+        "version": "59a50afa27798d65c7a71e987ee0d9ce9e114bb06bac138a73f3c49c12b63487",
+        "signature": "59a50afa27798d65c7a71e987ee0d9ce9e114bb06bac138a73f3c49c12b63487",
+        "affectsGlobalScope": false
+      },
+      "../../../node_modules/node-html-parser/dist/nodes/node.d.ts": {
+        "version": "e7113d9872837e7a2cc2aaae7033ff4b16afd013ccab83f2053f918c826beea1",
+        "signature": "e7113d9872837e7a2cc2aaae7033ff4b16afd013ccab83f2053f918c826beea1",
+        "affectsGlobalScope": false
+      },
+      "../../../node_modules/node-html-parser/dist/nodes/comment.d.ts": {
+        "version": "7a437c0925589cfc0cac6337a047066f6ba52cd384d0012a0eea68c051011ac7",
+        "signature": "7a437c0925589cfc0cac6337a047066f6ba52cd384d0012a0eea68c051011ac7",
+        "affectsGlobalScope": false
+      },
+      "../../../node_modules/node-html-parser/dist/matcher.d.ts": {
+        "version": "e56d23f455b13c1eff2747735435f750c3e4fd78da7648d9836c2d53d8bc458c",
+        "signature": "e56d23f455b13c1eff2747735435f750c3e4fd78da7648d9836c2d53d8bc458c",
+        "affectsGlobalScope": false
+      },
+      "../../../node_modules/node-html-parser/dist/nodes/html.d.ts": {
+        "version": "b5d60c2b09ab2b94a74650305386670df7c0b64e5c392bd1a0211afe28c188a2",
+        "signature": "b5d60c2b09ab2b94a74650305386670df7c0b64e5c392bd1a0211afe28c188a2",
+        "affectsGlobalScope": false
+      },
+      "../../../node_modules/node-html-parser/dist/parse.d.ts": {
+        "version": "2f917b00067815de93b5b05f5a1092351eccfb18561ad2b32a3747ecce68e779",
+        "signature": "2f917b00067815de93b5b05f5a1092351eccfb18561ad2b32a3747ecce68e779",
+        "affectsGlobalScope": false
+      },
+      "../../../node_modules/node-html-parser/dist/valid.d.ts": {
+        "version": "56170e6aa335d7d939d2f0d3f5664aa451f27fdeaf04e6daca73ddcd2191a9a5",
+        "signature": "56170e6aa335d7d939d2f0d3f5664aa451f27fdeaf04e6daca73ddcd2191a9a5",
+        "affectsGlobalScope": false
+      },
+      "../../../node_modules/node-html-parser/dist/nodes/text.d.ts": {
+        "version": "8c830d50f06337f2efb94d9b01014cd4b242029fc000d84b4f188db87e440372",
+        "signature": "8c830d50f06337f2efb94d9b01014cd4b242029fc000d84b4f188db87e440372",
+        "affectsGlobalScope": false
+      },
+      "../../../node_modules/node-html-parser/dist/index.d.ts": {
+        "version": "42f89918592edc388f99a2a18aaf92b9e9be279485329b44919a706e32897515",
+        "signature": "42f89918592edc388f99a2a18aaf92b9e9be279485329b44919a706e32897515",
+        "affectsGlobalScope": false
+      },
+      "../../../node_modules/axios/index.d.ts": {
+        "version": "0d892f035dbee4534f0ba096407136877595ca592f67ec9bb8a5c912b9c967e8",
+        "signature": "0d892f035dbee4534f0ba096407136877595ca592f67ec9bb8a5c912b9c967e8",
+        "affectsGlobalScope": false
+      },
+      "../src/quizlet/quizlet.service.ts": {
+        "version": "c4f3769378c7a277b9893552416274ca8a31a4f9c17c535add945ebdc5a34848",
+        "signature": "6b4eb444e3429f0445b7d7e7ef33d669186fed913f367c9c2d49da34d1145ea5",
+        "affectsGlobalScope": false
+      },
+      "../src/quizlet/quizlet.resolver.ts": {
+        "version": "af46a618c84972a83fb2e284101369b495065d952d0f892406932c3f4416d29c",
+        "signature": "27f5c0322e3033e16ed2cd581db086ca5c142a2bb742e1efb960ceb5aba7e41d",
+        "affectsGlobalScope": false
+      },
+      "../src/quizlet/quizlet.module.ts": {
+        "version": "163af55b301cc6e5f7443ba1df22d097468f945829ebda518a9d4c8c5bd0d612",
+        "signature": "e212f554388f184b652c4fafc34471e484242b0ba164a87553023ee9684c4a2a",
+        "affectsGlobalScope": false
+      },
+      "../src/users/user.entity.ts": {
+        "version": "9ee4ea3eaf50a2e1ff89299709acdabda23883ce328549018d42150653b476d6",
+        "signature": "f37e45ecb2b9dbacd38f10c03a11b3442a970fc553ced6eb489dae182815a8eb",
+        "affectsGlobalScope": false
+      },
       "../src/users/create-user.input.ts": {
         "version": "f86f169ff74377aea5cb3e0a270616e9687dae555712bad24084ec14b52a0e99",
         "signature": "d225e5fb5756f1fe72ebf6ecb303aa5015928fff9cbc6f547f544bd7c52bb74e",
@@ -5973,11 +5978,6 @@
       "../src/main.ts": {
         "version": "6d4d902a5818cf545db58a61f3f3e10a1b1c72a05af120e3ad6966537e9b8bde",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
-        "affectsGlobalScope": false
-      },
-      "../src/sheets/sheet.entity.ts": {
-        "version": "61ca705f5e641501f5f67743eba4f1a4b2f9abbed33b37a156491e6d6da91f02",
-        "signature": "7314f22a63d499371ad8e2c96f90f5eb98c27762e8a74961ce763ff5de8fcb59",
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/anymatch/index.d.ts": {
@@ -11653,10 +11653,13 @@
         "../src/base/base.entity.ts"
       ],
       "../src/sheets/sheet.model.ts": [
-        "../../../node_modules/@nestjs/graphql/index.d.ts"
+        "../../../node_modules/@nestjs/graphql/index.d.ts",
+        "../../../node_modules/class-validator/types/index.d.ts"
       ],
       "../src/sheets/sheets.module.ts": [
         "../../../node_modules/@nestjs/common/index.d.ts",
+        "../../../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/sheets/sheet.entity.ts",
         "../src/sheets/sheets.resolver.ts",
         "../src/sheets/sheets.service.ts"
       ],
@@ -11666,7 +11669,10 @@
         "../src/sheets/sheets.service.ts"
       ],
       "../src/sheets/sheets.service.ts": [
-        "../../../node_modules/@nestjs/common/index.d.ts"
+        "../../../node_modules/@nestjs/common/index.d.ts",
+        "../../../node_modules/@nestjs/typeorm/index.d.ts",
+        "../../../node_modules/typeorm/index.d.ts",
+        "../src/sheets/sheet.entity.ts"
       ],
       "../src/users/create-user.input.ts": [
         "../../../node_modules/@nestjs/graphql/index.d.ts",
@@ -16858,7 +16864,12 @@
         "../src/base/base.entity.ts"
       ],
       "../src/sheets/sheets.resolver.ts": [
+        "../src/sheets/sheet.model.ts",
         "../src/sheets/sheets.service.ts"
+      ],
+      "../src/sheets/sheets.service.ts": [
+        "../../../node_modules/typeorm/index.d.ts",
+        "../src/sheets/sheet.entity.ts"
       ],
       "../src/users/user.entity.ts": [
         "../src/base/base.entity.ts"
@@ -18150,7 +18161,19 @@
       "../src/sheets/sheet.entity.ts",
       "../src/sheets/sheet.model.ts",
       "../src/sheets/sheets.module.ts",
-      "../src/sheets/sheets.resolver.ts",
+      [
+        "../src/sheets/sheets.resolver.ts",
+        [
+          {
+            "file": "../src/sheets/sheets.resolver.ts",
+            "start": 330,
+            "length": 41,
+            "code": 2740,
+            "category": 1,
+            "messageText": "Type 'SheetEntity[]' is missing the following properties from type 'Sheet': id, title, forkedTimes, lookedAtTimes, and 2 more."
+          }
+        ]
+      ],
       "../src/sheets/sheets.service.ts",
       "../src/users/create-user.input.ts",
       "../src/users/user.entity.ts",

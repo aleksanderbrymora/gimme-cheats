@@ -10,11 +10,15 @@ exports.SheetsModule = void 0;
 const common_1 = require("@nestjs/common");
 const sheets_service_1 = require("./sheets.service");
 const sheets_resolver_1 = require("./sheets.resolver");
+const typeorm_1 = require("@nestjs/typeorm");
+const sheet_entity_1 = require("./sheet.entity");
 let SheetsModule = class SheetsModule {
 };
 SheetsModule = __decorate([
     common_1.Module({
-        providers: [sheets_resolver_1.SheetsResolver, sheets_service_1.SheetsService]
+        imports: [typeorm_1.TypeOrmModule.forFeature([sheet_entity_1.SheetEntity])],
+        exports: [sheets_service_1.SheetsService],
+        providers: [sheets_resolver_1.SheetsResolver, sheets_service_1.SheetsService],
     })
 ], SheetsModule);
 exports.SheetsModule = SheetsModule;

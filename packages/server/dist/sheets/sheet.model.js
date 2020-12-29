@@ -11,16 +11,37 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Sheet = void 0;
 const graphql_1 = require("@nestjs/graphql");
+const class_validator_1 = require("class-validator");
 let Sheet = class Sheet {
 };
 __decorate([
-    graphql_1.Field((type) => graphql_1.Int),
+    graphql_1.Field(() => graphql_1.Int),
     __metadata("design:type", Number)
 ], Sheet.prototype, "id", void 0);
 __decorate([
+    class_validator_1.Length(1, 50),
     graphql_1.Field(),
     __metadata("design:type", String)
-], Sheet.prototype, "content", void 0);
+], Sheet.prototype, "title", void 0);
+__decorate([
+    class_validator_1.Min(0),
+    graphql_1.Field(() => graphql_1.Int, { defaultValue: 0 }),
+    __metadata("design:type", Number)
+], Sheet.prototype, "forkedTimes", void 0);
+__decorate([
+    class_validator_1.Min(0),
+    graphql_1.Field(() => graphql_1.Int, { defaultValue: 0 }),
+    __metadata("design:type", Number)
+], Sheet.prototype, "lookedAtTimes", void 0);
+__decorate([
+    class_validator_1.Min(0),
+    graphql_1.Field(() => graphql_1.Int, { defaultValue: 0 }),
+    __metadata("design:type", Number)
+], Sheet.prototype, "points", void 0);
+__decorate([
+    graphql_1.Field(() => Boolean, { defaultValue: false }),
+    __metadata("design:type", Boolean)
+], Sheet.prototype, "containsProfanity", void 0);
 Sheet = __decorate([
     graphql_1.ObjectType()
 ], Sheet);

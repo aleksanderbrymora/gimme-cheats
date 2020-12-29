@@ -18,13 +18,11 @@ let SheetsResolver = class SheetsResolver {
         this.sheetsService = sheetsService;
     }
     async sheet() {
-        return {
-            content: 'sup',
-        };
+        return this.sheetsService.getAllSheets();
     }
 };
 __decorate([
-    graphql_1.Query(() => sheet_model_1.Sheet),
+    graphql_1.Query(() => [sheet_model_1.Sheet], { name: 'sheets' }),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Promise)
