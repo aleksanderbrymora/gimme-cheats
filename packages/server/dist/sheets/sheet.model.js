@@ -47,7 +47,7 @@ __decorate([
     __metadata("design:type", Boolean)
 ], Sheet.prototype, "containsProfanity", void 0);
 __decorate([
-    graphql_1.Field(() => user_model_1.User, { nullable: true }),
+    graphql_1.Field(() => user_model_1.User),
     typeorm_1.ManyToOne(() => user_model_1.User, (user) => user.sheets),
     __metadata("design:type", user_model_1.User)
 ], Sheet.prototype, "user", void 0);

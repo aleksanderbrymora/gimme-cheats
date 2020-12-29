@@ -32,7 +32,7 @@ export class Sheet extends Base {
   containsProfanity: boolean;
 
   // TODO change the nullable to false. Sheet cannot be saved without a login
-  @Field(() => User, { nullable: true })
+  @Field(() => User)
   @ManyToOne(() => User, (user) => user.sheets)
   user: User;
 }
