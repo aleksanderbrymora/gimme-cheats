@@ -27,6 +27,7 @@
     "next": "10.0.4",
     "pluralize": "^8.0.0",
     "react": "17.0.1",
+    "react-content-loader": "^5.1.4",
     "react-dom": "17.0.1",
     "regenerator-runtime": "^0.13.7",
     "supertokens-auth-react": "^0.2.2",

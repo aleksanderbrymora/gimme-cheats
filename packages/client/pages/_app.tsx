@@ -5,7 +5,7 @@ import 'regenerator-runtime/runtime';
 import SuperTokens from 'supertokens-auth-react';
 import EmailPassword from 'supertokens-auth-react/recipe/emailpassword';
 import Session from 'supertokens-auth-react/recipe/session';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/Layout/Navbar';
 import { useApollo } from '../lib/apolloClient';
 import axios from 'axios';
 import { gqlAddress } from '../lib/gqlAddress';
