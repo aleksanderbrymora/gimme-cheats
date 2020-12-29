@@ -24,6 +24,17 @@ let SheetsService = class SheetsService {
     async getAllSheets() {
         return this.sheetRepository.find({});
     }
+    async getAllWithUserID(id) {
+        return this.sheetRepository.find({ where: { user: id } });
+    }
+    async createSheet(createSheetInput) {
+        const { containsProfanity, title } = createSheetInput;
+        const sheet = this.sheetRepository.create({
+            title,
+            containsProfanity,
+        });
+        return this.sheetRepository.save(sheet);
+    }
 };
 SheetsService = __decorate([
     common_1.Injectable(),

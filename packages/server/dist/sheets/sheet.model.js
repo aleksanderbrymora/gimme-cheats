@@ -12,6 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Sheet = void 0;
 const graphql_1 = require("@nestjs/graphql");
 const class_validator_1 = require("class-validator");
+const user_model_1 = require("../users/user.model");
 const typeorm_1 = require("typeorm");
 const base_entity_1 = require("../base/base.entity");
 let Sheet = class Sheet extends base_entity_1.Base {
@@ -45,6 +46,11 @@ __decorate([
     typeorm_1.Column({ default: false }),
     __metadata("design:type", Boolean)
 ], Sheet.prototype, "containsProfanity", void 0);
+__decorate([
+    graphql_1.Field(() => user_model_1.User, { nullable: true }),
+    typeorm_1.ManyToOne(() => user_model_1.User, (user) => user.sheets),
+    __metadata("design:type", user_model_1.User)
+], Sheet.prototype, "user", void 0);
 Sheet = __decorate([
     graphql_1.ObjectType(),
     typeorm_1.Entity()

@@ -5810,19 +5810,29 @@
         "signature": "c436bbf78af8729630348095e2509c14941cd7c5eb191af5fc5ca5684f324dfb",
         "affectsGlobalScope": false
       },
+      "../src/users/user.model.ts": {
+        "version": "72ca6e36d3c33ab0a24b06e9a266d4422687e9c0c563b6868da1c2b8ebf33e7f",
+        "signature": "aee1ef55d9d3ffc3bb39434116811a47a2c9d60a568dba016d5206bdaeb9ac74",
+        "affectsGlobalScope": false
+      },
       "../src/sheets/sheet.model.ts": {
-        "version": "0a9beea248aa8f35c17ab4e270fe80f13ff15b6327850df7a09a703ef2941c26",
-        "signature": "c2337599c12874d7cf903c36b42f67cc2caf9af94ed1ebf27c23a46c7b981f8e",
+        "version": "8b37f5835e43f5b962eafc974b8176d07352ea2201fd60867819f392753c1998",
+        "signature": "5a2c47c3121047221bb3b681fb5d091dbe05d75c4fced1fb4aa7695c0b8d63ae",
+        "affectsGlobalScope": false
+      },
+      "../src/sheets/create-sheet.input.ts": {
+        "version": "e4793396656f5ae16accf8da722f64dc2188a61eb8bbe503b3468c7d87b55a4c",
+        "signature": "7d9da70c3e3069dd1612f5dec511d2324e4a924112d69ef0b2380ee6066e181a",
         "affectsGlobalScope": false
       },
       "../src/sheets/sheets.service.ts": {
-        "version": "78b572b3d97eb7ad324c18310ed4bbfa2e86c28fc6ea031410456672e62f6328",
-        "signature": "3f6a812609b1ccb84b5106d36ffe6f5feb715304ef86cbbc80b99f37d1cc3212",
+        "version": "d1560672b6c25468992a5a479638b0a53b229e4ec960b2bdd7a3ac591fd727a0",
+        "signature": "5d0907d6412f326ccf40524365e9f2250928e778a8e65634b549634fa2d2100d",
         "affectsGlobalScope": false
       },
       "../src/sheets/sheets.resolver.ts": {
-        "version": "ea9e3ec912b6fcb9d44382297c7dde9983baf75973336610f2d975ebb7fa929e",
-        "signature": "00731c2754aabc209ffadc6bc2e958dd3cc8540d252dd86ca0ae0cf34bcbe057",
+        "version": "c043a2a8aa0cdaca27593fa89f1b55f292042e694bae2c9689e58d4852c22d9f",
+        "signature": "c9354834749190da610464ad8593e5db1ea7bb71838eefa2e037db0836d913c2",
         "affectsGlobalScope": false
       },
       "../src/sheets/sheets.module.ts": {
@@ -5900,11 +5910,6 @@
         "signature": "e212f554388f184b652c4fafc34471e484242b0ba164a87553023ee9684c4a2a",
         "affectsGlobalScope": false
       },
-      "../src/users/user.model.ts": {
-        "version": "d138f5862e38c014fbd225260c8178bf5459c34444eaf640ca144446047a57f6",
-        "signature": "6d9d7eef8968c2ba298782b3d67400f036c24c4d697e7910693628d6f2e32ba1",
-        "affectsGlobalScope": false
-      },
       "../src/users/create-user.input.ts": {
         "version": "f86f169ff74377aea5cb3e0a270616e9687dae555712bad24084ec14b52a0e99",
         "signature": "d225e5fb5756f1fe72ebf6ecb303aa5015928fff9cbc6f547f544bd7c52bb74e",
@@ -5916,12 +5921,12 @@
         "affectsGlobalScope": false
       },
       "../src/users/users.resolver.ts": {
-        "version": "cea5a2ac94778edaa4f3c47a15ac6ee4606c59047bd8c3460bd1a98ec76f32aa",
-        "signature": "d82b62d5ffa381b88cb26d87df99f5cb6c5058b6658f18abe3d4758706668df8",
+        "version": "c8177e9822a30fc4d7b087c94888243e7741cf3d8b8eef8b97564ff77926c1a8",
+        "signature": "80bb3306b3ae29c976c1bc51cff075d9d64629c66855b736c7f106052522c42a",
         "affectsGlobalScope": false
       },
       "../src/users/users.module.ts": {
-        "version": "4c5c3b16a406eea163381885733d125c1211633225468ee7b72503879a9af7b2",
+        "version": "573e690bdb206ee400ca7c781750fdfd3367dd548dd6b760a4d941c977923486",
         "signature": "aa1725e38b5a0b4009f6a74f296f173e7926c119a60454dbd2e523861735df69",
         "affectsGlobalScope": false
       },
@@ -11636,11 +11641,17 @@
         "../src/sheets/sheet.model.ts",
         "../src/users/user.model.ts"
       ],
+      "../src/sheets/create-sheet.input.ts": [
+        "../../../node_modules/@nestjs/graphql/index.d.ts",
+        "../../../node_modules/class-validator/types/index.d.ts",
+        "../src/sheets/sheet.model.ts"
+      ],
       "../src/sheets/sheet.model.ts": [
         "../../../node_modules/@nestjs/graphql/index.d.ts",
         "../../../node_modules/class-validator/types/index.d.ts",
         "../../../node_modules/typeorm/index.d.ts",
-        "../src/base/base.entity.ts"
+        "../src/base/base.entity.ts",
+        "../src/users/user.model.ts"
       ],
       "../src/sheets/sheets.module.ts": [
         "../../../node_modules/@nestjs/common/index.d.ts",
@@ -11651,6 +11662,7 @@
       ],
       "../src/sheets/sheets.resolver.ts": [
         "../../../node_modules/@nestjs/graphql/index.d.ts",
+        "../src/sheets/create-sheet.input.ts",
         "../src/sheets/sheet.model.ts",
         "../src/sheets/sheets.service.ts"
       ],
@@ -11658,6 +11670,7 @@
         "../../../node_modules/@nestjs/common/index.d.ts",
         "../../../node_modules/@nestjs/typeorm/index.d.ts",
         "../../../node_modules/typeorm/index.d.ts",
+        "../src/sheets/create-sheet.input.ts",
         "../src/sheets/sheet.model.ts"
       ],
       "../src/users/create-user.input.ts": [
@@ -11668,17 +11681,22 @@
         "../../../node_modules/@nestjs/graphql/index.d.ts",
         "../../../node_modules/class-validator/types/index.d.ts",
         "../../../node_modules/typeorm/index.d.ts",
-        "../src/base/base.entity.ts"
+        "../src/base/base.entity.ts",
+        "../src/sheets/sheet.model.ts"
       ],
       "../src/users/users.module.ts": [
         "../../../node_modules/@nestjs/common/index.d.ts",
         "../../../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/sheets/sheet.model.ts",
+        "../src/sheets/sheets.service.ts",
         "../src/users/user.model.ts",
         "../src/users/users.resolver.ts",
         "../src/users/users.service.ts"
       ],
       "../src/users/users.resolver.ts": [
         "../../../node_modules/@nestjs/graphql/index.d.ts",
+        "../src/sheets/sheet.model.ts",
+        "../src/sheets/sheets.service.ts",
         "../src/users/create-user.input.ts",
         "../src/users/user.model.ts",
         "../src/users/users.service.ts"
@@ -16847,21 +16865,30 @@
       "../src/quizlet/quizlet.service.ts": [
         "../src/quizlet/quizlet.model.ts"
       ],
+      "../src/sheets/create-sheet.input.ts": [
+        "../src/sheets/sheet.model.ts"
+      ],
       "../src/sheets/sheet.model.ts": [
-        "../src/base/base.entity.ts"
+        "../src/base/base.entity.ts",
+        "../src/users/user.model.ts"
       ],
       "../src/sheets/sheets.resolver.ts": [
+        "../src/sheets/create-sheet.input.ts",
         "../src/sheets/sheet.model.ts",
         "../src/sheets/sheets.service.ts"
       ],
       "../src/sheets/sheets.service.ts": [
         "../../../node_modules/typeorm/index.d.ts",
+        "../src/sheets/create-sheet.input.ts",
         "../src/sheets/sheet.model.ts"
       ],
       "../src/users/user.model.ts": [
-        "../src/base/base.entity.ts"
+        "../src/base/base.entity.ts",
+        "../src/sheets/sheet.model.ts"
       ],
       "../src/users/users.resolver.ts": [
+        "../src/sheets/sheet.model.ts",
+        "../src/sheets/sheets.service.ts",
         "../src/users/create-user.input.ts",
         "../src/users/user.model.ts",
         "../src/users/users.service.ts"
@@ -18144,6 +18171,7 @@
       "../src/quizlet/quizlet.resolver.ts",
       "../src/quizlet/quizlet.service.ts",
       "../src/seed.ts",
+      "../src/sheets/create-sheet.input.ts",
       "../src/sheets/sheet.model.ts",
       "../src/sheets/sheets.module.ts",
       "../src/sheets/sheets.resolver.ts",
