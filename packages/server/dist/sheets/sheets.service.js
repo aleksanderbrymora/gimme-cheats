@@ -22,17 +22,13 @@ let SheetsService = class SheetsService {
         this.sheetRepository = sheetRepository;
     }
     async getAllSheets() {
-        return this.sheetRepository.find({});
+        return this.sheetRepository.find({ relations: ['user'] });
     }
     async getAllWithUserID(id) {
         return this.sheetRepository.find({ where: { user: id } });
     }
     async createSheet(createSheetInput) {
-        const { containsProfanity, title } = createSheetInput;
-        const sheet = this.sheetRepository.create({
-            title,
-            containsProfanity,
-        });
+        const sheet = this.sheetRepository.create(createSheetInput);
         return this.sheetRepository.save(sheet);
     }
 };

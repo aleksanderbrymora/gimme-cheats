@@ -25,7 +25,7 @@ import { Sheet } from './sheets/sheet.model';
         username: connectionOptions.user,
         password: connectionOptions.password,
         database: connectionOptions.database as string,
-        entities: [User, Language, Sheet, Sheet],
+        entities: [User, Language, Sheet],
         synchronize: true,
         logger: 'advanced-console',
         dropSchema: process.env.NODE_ENV !== 'production',

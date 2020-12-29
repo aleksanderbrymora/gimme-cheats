@@ -5821,22 +5821,22 @@
         "affectsGlobalScope": false
       },
       "../src/sheets/create-sheet.input.ts": {
-        "version": "e4793396656f5ae16accf8da722f64dc2188a61eb8bbe503b3468c7d87b55a4c",
-        "signature": "7d9da70c3e3069dd1612f5dec511d2324e4a924112d69ef0b2380ee6066e181a",
+        "version": "1d489f0e613fd71269c90861ed298ef7b12e02b9d9d0e01a3ec30ea82b85a018",
+        "signature": "d5e088ef364f63696d69eb8fe51c84d096384830e31951c9375b6248e4b963d9",
         "affectsGlobalScope": false
       },
       "../src/sheets/sheets.service.ts": {
-        "version": "d1560672b6c25468992a5a479638b0a53b229e4ec960b2bdd7a3ac591fd727a0",
+        "version": "263ae9a2e83467f5c52d1f415aff9d9746ddd0d6c9dce68f84579aca08095cd0",
         "signature": "5d0907d6412f326ccf40524365e9f2250928e778a8e65634b549634fa2d2100d",
         "affectsGlobalScope": false
       },
       "../src/sheets/sheets.resolver.ts": {
-        "version": "c043a2a8aa0cdaca27593fa89f1b55f292042e694bae2c9689e58d4852c22d9f",
-        "signature": "c9354834749190da610464ad8593e5db1ea7bb71838eefa2e037db0836d913c2",
+        "version": "8765f6364531af8e0154de701cf9f4b0755c63d823f29ddebfc70b1c0b7e7921",
+        "signature": "135bdb30b76c702fb9b2f525e3510aa52dc6e5b3fb7063e0df3fe8f31dd7d25e",
         "affectsGlobalScope": false
       },
       "../src/sheets/sheets.module.ts": {
-        "version": "71abb9b9fcb19762ca67f3e751e465219ee7d9df48e12a9edbed966ffccbae09",
+        "version": "cdc7089efb05bf95dcc8c9df5fe311ebef33d3ccdea50cd97809a784a7e26715",
         "signature": "df6d29f1b4d3a962eb86b512bde1e6748a1cd940e16a13e2644d18a9da2386f2",
         "affectsGlobalScope": false
       },
@@ -5916,8 +5916,8 @@
         "affectsGlobalScope": false
       },
       "../src/users/users.service.ts": {
-        "version": "1f80d50af1968b942bf9c497fec6737f44d06ae793988f77435d647da010af21",
-        "signature": "20e6c2557f70548aa871454156413bce53dcdfab08aff8fa7779ffadcde8b186",
+        "version": "e0937a253f15391b7fe6743b8361bf7c6ac46b488939d5979cd85c68c9ccee92",
+        "signature": "4a9062992bd2e03945c4d8089b23536456e06f3ca2a512a7ddebf9a4f6423037",
         "affectsGlobalScope": false
       },
       "../src/users/users.resolver.ts": {
@@ -5956,17 +5956,37 @@
         "affectsGlobalScope": false
       },
       "../src/app.module.ts": {
-        "version": "dae611376693c80f13a70476a59302b923884f6cd8c7d46644e9eebef4499903",
+        "version": "a416a2249efc3060ed31e3cfb8b1d4722992a6505bf897d98e10560829031fde",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
-      "../src/seed.ts": {
-        "version": "43ca22de1a916759725eca6194b30e187b34cb38768cd63dd840b753d61889c1",
+      "../src/seed/languages.ts": {
+        "version": "34561bb9064c0b226830aebef15e676b58ae610219c2efa91a748997b1f2560a",
+        "signature": "fe8d83199446a18c7d1650b7372247e71540ac8932adf6f6f9bb9e622516176f",
+        "affectsGlobalScope": false
+      },
+      "../../../node_modules/@types/faker/index.d.ts": {
+        "version": "5ddf1c1c220a206c584a71cbbedc1a85e25d75bcfadd875a41cee362713f01dd",
+        "signature": "5ddf1c1c220a206c584a71cbbedc1a85e25d75bcfadd875a41cee362713f01dd",
+        "affectsGlobalScope": true
+      },
+      "../src/seed/users.ts": {
+        "version": "41593ee0d57342bc452fe8a29c61c90acc6f874995618fc974e3d8f2210d4805",
+        "signature": "551428171b0e35c63d90eb54269d7d76275be26b6a45977cccc8d221cd42b849",
+        "affectsGlobalScope": false
+      },
+      "../src/seed/sheets.ts": {
+        "version": "3d10f5fb9210233c4754393ae6514ea9a942db2342e5082077183df032b8a963",
+        "signature": "5681da5c258b2a2f245aa9c6e4c13c9ce6295f4cf76cc47e1aaf02df69ae4bf2",
+        "affectsGlobalScope": false
+      },
+      "../src/seed/index.ts": {
+        "version": "0be4774c70e8ddda4cce0e34e26351e6ed4a7cd57f87405e58ddf27948732c4c",
         "signature": "639be0cf86fce8451235b7f937f13d6a0ce48652a7173fe460e4402c2244df1f",
         "affectsGlobalScope": false
       },
       "../src/main.ts": {
-        "version": "6d4d902a5818cf545db58a61f3f3e10a1b1c72a05af120e3ad6966537e9b8bde",
+        "version": "f67863abc97beedaccbdf80c9f7b26fc74f1ae1efb2a457925fed8899abfe5ef",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -6039,11 +6059,6 @@
         "version": "274bda283ef15f4205603ca9967313fc013aa77ae89f2cbeab5fbd51439e96ed",
         "signature": "274bda283ef15f4205603ca9967313fc013aa77ae89f2cbeab5fbd51439e96ed",
         "affectsGlobalScope": false
-      },
-      "../../../node_modules/@types/faker/index.d.ts": {
-        "version": "5ddf1c1c220a206c584a71cbbedc1a85e25d75bcfadd875a41cee362713f01dd",
-        "signature": "5ddf1c1c220a206c584a71cbbedc1a85e25d75bcfadd875a41cee362713f01dd",
-        "affectsGlobalScope": true
       },
       "../../../node_modules/@types/minimatch/index.d.ts": {
         "version": "1d1e6bd176eee5970968423d7e215bfd66828b6db8d54d17afec05a831322633",
@@ -11607,11 +11622,9 @@
         "../src/languages/language.model.ts"
       ],
       "../src/main.ts": [
-        "../../../node_modules/@nestjs/common/index.d.ts",
         "../../../node_modules/@nestjs/core/index.d.ts",
-        "../../../node_modules/@types/node/process.d.ts",
         "../src/app.module.ts",
-        "../src/seed.ts"
+        "../src/seed/index.ts"
       ],
       "../src/quizlet/quizlet.model.ts": [
         "../../../node_modules/@nestjs/graphql/index.d.ts"
@@ -11632,19 +11645,42 @@
         "../../../node_modules/node-html-parser/dist/index.d.ts",
         "../src/quizlet/quizlet.model.ts"
       ],
-      "../src/seed.ts": [
+      "../src/seed/index.ts": [
         "../../../node_modules/nestjs-easyconfig/index.d.ts",
         "../../../node_modules/pg-connection-string/index.d.ts",
         "../../../node_modules/typeorm/index.d.ts",
         "../src/languages/language.model.ts",
-        "../src/languages/languages.service.ts",
+        "../src/seed/languages.ts",
+        "../src/seed/sheets.ts",
+        "../src/seed/users.ts",
         "../src/sheets/sheet.model.ts",
         "../src/users/user.model.ts"
+      ],
+      "../src/seed/languages.ts": [
+        "../../../node_modules/typeorm/index.d.ts",
+        "../src/languages/language.model.ts",
+        "../src/languages/languages.service.ts"
+      ],
+      "../src/seed/sheets.ts": [
+        "../../../node_modules/@types/faker/index.d.ts",
+        "../../../node_modules/typeorm/index.d.ts",
+        "../src/sheets/create-sheet.input.ts",
+        "../src/sheets/sheet.model.ts",
+        "../src/sheets/sheets.service.ts",
+        "../src/users/user.model.ts",
+        "../src/users/users.service.ts"
+      ],
+      "../src/seed/users.ts": [
+        "../../../node_modules/@types/faker/index.d.ts",
+        "../../../node_modules/typeorm/index.d.ts",
+        "../src/users/user.model.ts",
+        "../src/users/users.service.ts"
       ],
       "../src/sheets/create-sheet.input.ts": [
         "../../../node_modules/@nestjs/graphql/index.d.ts",
         "../../../node_modules/class-validator/types/index.d.ts",
-        "../src/sheets/sheet.model.ts"
+        "../src/sheets/sheet.model.ts",
+        "../src/users/user.model.ts"
       ],
       "../src/sheets/sheet.model.ts": [
         "../../../node_modules/@nestjs/graphql/index.d.ts",
@@ -16865,8 +16901,18 @@
       "../src/quizlet/quizlet.service.ts": [
         "../src/quizlet/quizlet.model.ts"
       ],
+      "../src/seed/languages.ts": [
+        "../../../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/seed/sheets.ts": [
+        "../../../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/seed/users.ts": [
+        "../../../node_modules/typeorm/index.d.ts"
+      ],
       "../src/sheets/create-sheet.input.ts": [
-        "../src/sheets/sheet.model.ts"
+        "../src/sheets/sheet.model.ts",
+        "../src/users/user.model.ts"
       ],
       "../src/sheets/sheet.model.ts": [
         "../src/base/base.entity.ts",
@@ -18170,7 +18216,10 @@
       "../src/quizlet/quizlet.module.ts",
       "../src/quizlet/quizlet.resolver.ts",
       "../src/quizlet/quizlet.service.ts",
-      "../src/seed.ts",
+      "../src/seed/index.ts",
+      "../src/seed/languages.ts",
+      "../src/seed/sheets.ts",
+      "../src/seed/users.ts",
       "../src/sheets/create-sheet.input.ts",
       "../src/sheets/sheet.model.ts",
       "../src/sheets/sheets.module.ts",

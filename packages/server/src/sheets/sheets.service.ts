@@ -12,7 +12,7 @@ export class SheetsService {
   ) {}
 
   async getAllSheets(): Promise<Sheet[]> {
-    return this.sheetRepository.find({});
+    return this.sheetRepository.find({ relations: ['user'] });
   }
 
   async getAllWithUserID(id: number): Promise<Sheet[]> {
@@ -20,11 +20,7 @@ export class SheetsService {
   }
 
   async createSheet(createSheetInput: CreateSheetInput): Promise<Sheet> {
-    const { containsProfanity, title } = createSheetInput;
-    const sheet = this.sheetRepository.create({
-      title,
-      containsProfanity,
-    });
+    const sheet = this.sheetRepository.create(createSheetInput);
 
     return this.sheetRepository.save(sheet);
   }

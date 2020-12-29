@@ -14,9 +14,9 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.SheetsResolver = void 0;
 const graphql_1 = require("@nestjs/graphql");
+const create_sheet_input_1 = require("./create-sheet.input");
 const sheet_model_1 = require("./sheet.model");
 const sheets_service_1 = require("./sheets.service");
-const create_sheet_input_1 = require("./create-sheet.input");
 let SheetsResolver = class SheetsResolver {
     constructor(sheetsService) {
         this.sheetsService = sheetsService;
@@ -42,7 +42,7 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], SheetsResolver.prototype, "createSheet", null);
 SheetsResolver = __decorate([
-    graphql_1.Resolver(),
+    graphql_1.Resolver(() => sheet_model_1.Sheet),
     __metadata("design:paramtypes", [sheets_service_1.SheetsService])
 ], SheetsResolver);
 exports.SheetsResolver = SheetsResolver;

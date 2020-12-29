@@ -1,9 +1,9 @@
 import { Args, Mutation, Query, Resolver } from '@nestjs/graphql';
+import { CreateSheetInput } from './create-sheet.input';
 import { Sheet } from './sheet.model';
 import { SheetsService } from './sheets.service';
-import { CreateSheetInput } from './create-sheet.input';
 
-@Resolver()
+@Resolver(() => Sheet)
 export class SheetsResolver {
   constructor(private readonly sheetsService: SheetsService) {}
 
