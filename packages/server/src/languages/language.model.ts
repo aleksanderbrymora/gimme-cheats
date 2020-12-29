@@ -1,14 +1,11 @@
-import { Field, Int, ObjectType } from '@nestjs/graphql';
+import { Field, ObjectType } from '@nestjs/graphql';
 import { Length } from 'class-validator';
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity } from 'typeorm';
+import { Base } from '../base/base.entity';
 
 @ObjectType()
 @Entity()
-export class Language {
-  @Field(() => Int)
-  @PrimaryGeneratedColumn()
-  id: number;
-
+export class Language extends Base {
   @Length(1, 50)
   @Field()
   @Column({ type: 'varchar', length: 50 })

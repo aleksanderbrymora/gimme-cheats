@@ -14,13 +14,11 @@ const axios_1 = require("axios");
 let QuizletService = class QuizletService {
     async getQuizletPage(url) {
         const body = await axios_1.default.get(url);
-        console.log(body);
         return body.data;
     }
     async getQuizletData(url) {
         const Q = new quizlet_model_1.Quizlet();
         Q.words || (Q.words = []);
-        console.log('starting the scrape. URL: ', url);
         try {
             const data = await this.getQuizletPage(url);
             const root = node_html_parser_1.parse(data);
@@ -38,7 +36,6 @@ let QuizletService = class QuizletService {
             Q.fromLanguage = fromLang;
             Q.toLanguage = toLang;
             Q.title = root.querySelector('h1').innerText;
-            console.log(Q);
             return Q;
         }
         catch (error) {

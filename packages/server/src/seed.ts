@@ -3,7 +3,8 @@ import { parse as parseDBString } from 'pg-connection-string';
 import { createConnection } from 'typeorm';
 import { Language } from './languages/language.model';
 import { LanguagesService } from './languages/languages.service';
-import { UserEntity } from './users/user.entity';
+import { Sheet } from './sheets/sheet.model';
+import { User } from './users/user.model';
 
 export const seed = async (): Promise<void> => {
   EasyconfigModule.register({ path: '.env' });
@@ -18,7 +19,7 @@ export const seed = async (): Promise<void> => {
     username: connectionOptions.user,
     password: connectionOptions.password,
     database: connectionOptions.database as string,
-    entities: [UserEntity, Language],
+    entities: [User, Language, Sheet],
     synchronize: true,
     logger: 'advanced-console',
     dropSchema: process.env.NODE_ENV !== 'production',

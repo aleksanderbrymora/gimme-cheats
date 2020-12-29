@@ -7,22 +7,13 @@ import axios from 'axios';
 export class QuizletService {
   private async getQuizletPage(url: string) {
     const body = await axios.get(url);
-    console.log(body);
     return body.data;
   }
-  // private async getQuizletPage(url: string) {
-  //   const res = await fetch(url);
-  //   const body = await res.text();
-  //   console.log(body);
-  //   return body;
-  // }
 
   async getQuizletData(url: string) {
     const Q = new Quizlet();
     Q.words ||= [];
-    console.log('starting the scrape. URL: ', url);
 
-    // Getting the words
     try {
       const data = await this.getQuizletPage(url);
       const root = parse(data);
@@ -47,8 +38,6 @@ export class QuizletService {
 
       // Getting the title
       Q.title = root.querySelector('h1').innerText;
-
-      console.log(Q);
 
       return Q;
     } catch (error) {
