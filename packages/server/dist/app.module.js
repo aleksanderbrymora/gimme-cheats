@@ -15,9 +15,9 @@ const pg_connection_string_1 = require("pg-connection-string");
 const sheets_module_1 = require("./sheets/sheets.module");
 const quizlet_module_1 = require("./quizlet/quizlet.module");
 const users_module_1 = require("./users/users.module");
-const user_entity_1 = require("./users/user.entity");
+const user_model_1 = require("./users/user.model");
 const languages_module_1 = require("./languages/languages.module");
-const language_entity_1 = require("./languages/language.entity");
+const language_model_1 = require("./languages/language.model");
 const sheet_model_1 = require("./sheets/sheet.model");
 let AppModule = class AppModule {
 };
@@ -35,7 +35,7 @@ AppModule = __decorate([
                     username: connectionOptions.user,
                     password: connectionOptions.password,
                     database: connectionOptions.database,
-                    entities: [user_entity_1.UserEntity, language_entity_1.LanguageEntity, sheet_model_1.Sheet],
+                    entities: [user_model_1.User, language_model_1.Language, sheet_model_1.Sheet, sheet_model_1.Sheet],
                     synchronize: true,
                     logger: 'advanced-console',
                     dropSchema: process.env.NODE_ENV !== 'production',

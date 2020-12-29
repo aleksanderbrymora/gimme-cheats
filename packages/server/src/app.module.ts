@@ -6,9 +6,9 @@ import { parse as parseDBString } from 'pg-connection-string';
 import { SheetsModule } from './sheets/sheets.module';
 import { QuizletModule } from './quizlet/quizlet.module';
 import { UsersModule } from './users/users.module';
-import { UserEntity } from './users/user.entity';
+import { User } from './users/user.model';
 import { LanguagesModule } from './languages/languages.module';
-import { LanguageEntity } from './languages/language.entity';
+import { Language } from './languages/language.model';
 import { Sheet } from './sheets/sheet.model';
 
 @Module({
@@ -25,7 +25,7 @@ import { Sheet } from './sheets/sheet.model';
         username: connectionOptions.user,
         password: connectionOptions.password,
         database: connectionOptions.database as string,
-        entities: [UserEntity, LanguageEntity, Sheet],
+        entities: [User, Language, Sheet, Sheet],
         synchronize: true,
         logger: 'advanced-console',
         dropSchema: process.env.NODE_ENV !== 'production',
