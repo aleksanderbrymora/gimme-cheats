@@ -5806,8 +5806,8 @@
         "affectsGlobalScope": false
       },
       "../src/base/base.entity.ts": {
-        "version": "68cabba8e311539abd1f9ef0b03378dcd928c054d529ec8d63237e142774de56",
-        "signature": "c436bbf78af8729630348095e2509c14941cd7c5eb191af5fc5ca5684f324dfb",
+        "version": "79cf0ad630f0b4ed3eec4f65a8855116cea2668ff98f0669c4974a5f42546847",
+        "signature": "e9425eeece57ef53e8059356f4ae806a629d0690b7560e70c82a231844fe8e30",
         "affectsGlobalScope": false
       },
       "../src/users/user.model.ts": {
@@ -5818,6 +5818,11 @@
       "../src/sheets/sheet.model.ts": {
         "version": "dd140c9ec82e24572f137441882fc8db51c94c3e95384452ed268f57d35cb6bc",
         "signature": "5a2c47c3121047221bb3b681fb5d091dbe05d75c4fced1fb4aa7695c0b8d63ae",
+        "affectsGlobalScope": false
+      },
+      "../../../node_modules/@types/humanize-duration/index.d.ts": {
+        "version": "a869227fa0901f9715a658514b16facf1e3faf3991dc729c62816d565969fcb6",
+        "signature": "a869227fa0901f9715a658514b16facf1e3faf3991dc729c62816d565969fcb6",
         "affectsGlobalScope": false
       },
       "../src/sheets/create-sheet.input.ts": {
@@ -5831,8 +5836,8 @@
         "affectsGlobalScope": false
       },
       "../src/sheets/sheets.resolver.ts": {
-        "version": "8765f6364531af8e0154de701cf9f4b0755c63d823f29ddebfc70b1c0b7e7921",
-        "signature": "135bdb30b76c702fb9b2f525e3510aa52dc6e5b3fb7063e0df3fe8f31dd7d25e",
+        "version": "cfb4d39787528dc14ae15c11137e7977658ab14b1b2ec7a80269869b5300e7ef",
+        "signature": "53372949783b0c76625af94deddddf5e0b919aa9effec6f7bdd6ef68e2afe9f9",
         "affectsGlobalScope": false
       },
       "../src/sheets/sheets.module.ts": {
@@ -5946,7 +5951,7 @@
         "affectsGlobalScope": false
       },
       "../src/languages/languages.resolver.ts": {
-        "version": "f42403b2151fc20f3626cc402c4ddb1396548abf1cff35e31bcecae932bd6214",
+        "version": "9ce0dda62875c6c298ee8411c68044cedfffdc05b730640630d1da11998d2038",
         "signature": "44d7a210288ed947cff6ca8c9f3cebbd93d64e65f5b7e6ddc37fdb362e4bd9fe",
         "affectsGlobalScope": false
       },
@@ -6073,11 +6078,6 @@
       "../../../node_modules/@types/graceful-fs/index.d.ts": {
         "version": "cb6cf0480ee1aa9f706db1f6f5add596a1aa10e8c4beb1817f2318384ba684dc",
         "signature": "cb6cf0480ee1aa9f706db1f6f5add596a1aa10e8c4beb1817f2318384ba684dc",
-        "affectsGlobalScope": false
-      },
-      "../../../node_modules/@types/humanize-duration/index.d.ts": {
-        "version": "a869227fa0901f9715a658514b16facf1e3faf3991dc729c62816d565969fcb6",
-        "signature": "a869227fa0901f9715a658514b16facf1e3faf3991dc729c62816d565969fcb6",
         "affectsGlobalScope": false
       },
       "../../../node_modules/@types/istanbul-lib-coverage/index.d.ts": {
@@ -11703,6 +11703,7 @@
       ],
       "../src/sheets/sheets.resolver.ts": [
         "../../../node_modules/@nestjs/graphql/index.d.ts",
+        "../../../node_modules/@types/humanize-duration/index.d.ts",
         "../src/sheets/create-sheet.input.ts",
         "../src/sheets/sheet.model.ts",
         "../src/sheets/sheets.service.ts"

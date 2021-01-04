@@ -6,4 +6,5 @@ export declare class SheetsResolver {
     constructor(sheetsService: SheetsService);
     sheets(): Promise<Sheet[]>;
     createSheet(createSheetInput: CreateSheetInput): Promise<Sheet>;
+    humanDate(sheet: Sheet): string;
 }
