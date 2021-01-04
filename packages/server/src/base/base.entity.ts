@@ -18,4 +18,7 @@ export abstract class Base {
   @Field(() => Date)
   @UpdateDateColumn()
   updatedAt: Date;
+
+  @Field(() => String)
+  humanDate: string;
 }
