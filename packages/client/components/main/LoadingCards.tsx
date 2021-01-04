@@ -3,6 +3,7 @@ import ContentLoader from 'react-content-loader';
 
 function useWindowSize() {
   const [size, setSize] = useState([0, 0]);
+  if (typeof window === undefined) return size;
   useLayoutEffect(() => {
     function updateSize() {
       setSize([window.innerWidth, window.innerHeight]);
