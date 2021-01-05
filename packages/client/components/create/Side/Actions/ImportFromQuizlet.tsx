@@ -1,5 +1,4 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { gql, useLazyQuery } from '@apollo/client';
 import {
   Box,
   Button,
@@ -9,37 +8,15 @@ import {
   Stack,
   Text,
 } from '@chakra-ui/react';
-import React, { useEffect, useState } from 'react';
-import { useMst } from 'models/Root';
-import { isValidQuizletURL } from 'lib/quizlet/validateQuizletURL';
+import { useQuizletLazyQuery } from 'generated/graphql';
 import isoLangs from 'iso-639-1';
-
-const QUIZLET = gql`
-  query quizlet($url: String!) {
-    quizlet(url: $url) {
-      title
-      fromLanguage
-      toLanguage
-      words {
-        from
-        to
-      }
-    }
-  }
-`;
-
-interface QuizletType {
-  quizlet: {
-    title: string;
-    fromLanguage: string;
-    toLanguage: string;
-    words: { from: string; to: string }[];
-  };
-}
+import { isValidQuizletURL } from 'lib/quizlet/validateQuizletURL';
+import { useMst } from 'models/Root';
+import React, { useEffect, useState } from 'react';
 
 const ImportFromQuizlet = () => {
   const { words, sheet } = useMst();
-  const [getQuizlet, { loading, data }] = useLazyQuery(QUIZLET);
+  const [getQuizlet, { loading, data }] = useQuizletLazyQuery();
   const [quizlet, setQuizlet] = useState(
     'https://quizlet.com/pl/221530176/longman-rep_9-flash-cards/',
   );
@@ -51,11 +28,14 @@ const ImportFromQuizlet = () => {
   }, [quizlet]);
 
   useEffect(() => {
-    if (data) {
+    if (data && data.quizlet) {
       const {
-        quizlet: { fromLanguage, toLanguage, title, words: quizletWords },
-      } = data as QuizletType;
-      sheet.changeTitle(title);
+        title,
+        fromLanguage,
+        toLanguage,
+        words: quizletWords,
+      } = data.quizlet;
+      if (title) sheet.changeTitle(title);
 
       const toLang = isoLangs.getName(toLanguage).toLowerCase();
       if (toLang && sheet.languages.find((l) => l.name === toLang)) {

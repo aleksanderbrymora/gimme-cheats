@@ -1,39 +1,21 @@
-import { gql, useQuery } from '@apollo/client';
 import { Box } from '@chakra-ui/react';
 import React from 'react';
+import { Sheet, useSheetsQuery } from '../../generated/graphql';
 import Card from './Card';
-import { ISheet } from './types/ISheet';
 import LoadingCards from './LoadingCards';
 
-const GET_SHEETS = gql`
-  query Sheets {
-    sheets {
-      title
-      updatedAt
-      points
-      user {
-        username
-      }
-    }
-  }
-`;
-
-interface SheetResponse {
-  sheets: ISheet[];
-}
-
 const Main = () => {
-  const { loading, error, data } = useQuery<SheetResponse>(GET_SHEETS);
+  const { loading, error, data } = useSheetsQuery();
 
   if (loading) return <LoadingCards />;
-  if (error || data?.sheets.length === 0) throw error;
+  if (error || !data?.sheets) throw error;
 
-  const { sheets } = data!;
+  const { sheets } = data;
 
   return (
     <Box pt={9}>
       {sheets.map((s) => (
-        <Card sheet={s} />
+        <Card key={s.id} sheet={s as Sheet} />
       ))}
     </Box>
   );

@@ -1,7 +1,8 @@
 query Sheets {
   sheets {
+    id
     title
-    updatedAt
+    humanDate
     points
     user {
       username
