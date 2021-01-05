@@ -14,7 +14,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "baseUrl": ".",
-    "rootDir": ".",
+    "rootDirs": ["models", "generated", "components", "lib"],
     "strictNullChecks": true
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

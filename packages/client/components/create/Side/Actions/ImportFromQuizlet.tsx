@@ -8,11 +8,11 @@ import {
   Stack,
   Text,
 } from '@chakra-ui/react';
-import { useQuizletLazyQuery } from 'generated/graphql';
 import isoLangs from 'iso-639-1';
 import { isValidQuizletURL } from 'lib/quizlet/validateQuizletURL';
 import { useMst } from 'models/Root';
 import React, { useEffect, useState } from 'react';
+import { useQuizletLazyQuery } from 'generated/graphql';
 
 const ImportFromQuizlet = () => {
   const { words, sheet } = useMst();

@@ -1,5 +1,4 @@
 import { Box } from '@chakra-ui/react';
-import React from 'react';
 import WordInput from './WordInput';
 import WordList from './List';
 
