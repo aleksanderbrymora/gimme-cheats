@@ -1,5 +1,4 @@
 // Not sure why but `*` fixes the issue
-import { Type } from '@nestjs/common';
 import { Args, Mutation, Query, Resolver } from '@nestjs/graphql';
 import { Base } from 'src/base/base.entity';
 import { BaseResolver } from '../base/base.resolver';
@@ -8,7 +7,7 @@ import { Sheet } from './sheet.model';
 import { SheetsService } from './sheets.service';
 
 @Resolver(() => Sheet)
-export class SheetsResolver extends BaseResolver(Sheet as Partial<Base>) {
+export class SheetsResolver extends BaseResolver(Sheet) {
   constructor(private readonly sheetsService: SheetsService) {
     super();
   }
