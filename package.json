@@ -11,7 +11,6 @@
     "lerna": "^3.22.1"
   },
   "scripts": {
-    "prestart": "yarn codegen:client",
     "start": "lerna run dev",
     "start:server": "yarn workspace @cheats/server dev",
     "start:client": "yarn workspace @cheats/client dev",
