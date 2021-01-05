@@ -35,7 +35,6 @@ const Main = () => {
       {sheets.map((s) => (
         <Card sheet={s} />
       ))}
-      {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
     </Box>
   );
 };

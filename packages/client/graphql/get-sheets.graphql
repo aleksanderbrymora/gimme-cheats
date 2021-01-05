@@ -1,0 +1,10 @@
+query Sheets {
+  sheets {
+    title
+    updatedAt
+    points
+    user {
+      username
+    }
+  }
+}
