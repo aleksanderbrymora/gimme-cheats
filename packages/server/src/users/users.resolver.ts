@@ -11,13 +11,16 @@ import { User } from './user.model';
 import { UsersService } from './users.service';
 import { Sheet } from '../sheets/sheet.model';
 import { SheetsService } from '../sheets/sheets.service';
+import { BaseResolver } from '../base/base.resolver';
 
 @Resolver(() => User)
-export class UsersResolver {
+export class UsersResolver extends BaseResolver(User) {
   constructor(
     private readonly usersService: UsersService,
     private readonly sheetService: SheetsService,
-  ) {}
+  ) {
+    super();
+  }
 
   @Query(() => Boolean)
   async isUsernameFree(@Args('username') username: string): Promise<Boolean> {

@@ -23,13 +23,4 @@ export class SheetsResolver extends BaseResolver(Sheet) {
   ): Promise<Sheet> {
     return this.sheetsService.createSheet(createSheetInput);
   }
-
-  // @ResolveField(() => String, {})
-  // humanDate(@Root() sheet: Sheet): string {
-  //   const now = Date.now();
-  //   const updated = Date.parse(sheet.updatedAt.toString());
-  //   const diff = now - updated;
-  //   const humanized = humanize(diff, { round: true, largest: 2 });
-  //   return `Created ${humanized} ago`;
-  // }
 }
