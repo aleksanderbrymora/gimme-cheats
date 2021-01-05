@@ -1,0 +1,11 @@
+query Sheets {
+  sheets {
+    id
+    title
+    humanDate
+    points
+    user {
+      username
+    }
+  }
+}
