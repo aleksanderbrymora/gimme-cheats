@@ -1,11 +1,26 @@
-import { Args, Mutation, Query, Resolver } from '@nestjs/graphql';
+import {
+  Args,
+  Mutation,
+  Parent,
+  Query,
+  ResolveField,
+  Resolver,
+} from '@nestjs/graphql';
 import { CreateUserInput } from './create-user.input';
 import { User } from './user.model';
 import { UsersService } from './users.service';
+import { Sheet } from '../sheets/sheet.model';
+import { SheetsService } from '../sheets/sheets.service';
+import { BaseResolver } from '../base/base.resolver';
 
-@Resolver()
-export class UsersResolver {
-  constructor(private readonly usersService: UsersService) {}
+@Resolver(() => User)
+export class UsersResolver extends BaseResolver(User) {
+  constructor(
+    private readonly usersService: UsersService,
+    private readonly sheetService: SheetsService,
+  ) {
+    super();
+  }
 
   @Query(() => Boolean)
   async isUsernameFree(@Args('username') username: string): Promise<Boolean> {
@@ -18,7 +33,7 @@ export class UsersResolver {
     return this.usersService.getBySuperTokenID(id);
   }
 
-  @Query(() => [User])
+  @Query(() => [User], { name: 'users' })
   async getAllUsers(): Promise<User[]> {
     return this.usersService.findAllUsers();
   }
@@ -28,5 +43,11 @@ export class UsersResolver {
     @Args('createUserInput') createUserInput: CreateUserInput,
   ): Promise<User> {
     return this.usersService.createUser(createUserInput);
+  }
+
+  @ResolveField('sheets', () => [Sheet])
+  async getSheets(@Parent() user: User): Promise<Sheet[]> {
+    const { id } = user;
+    return this.sheetService.getAllWithUserID(id);
   }
 }

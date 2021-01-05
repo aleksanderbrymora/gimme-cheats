@@ -1,9 +1,9 @@
-import { Args, Mutation, Resolver, Query } from '@nestjs/graphql';
+import { Args, Mutation, Resolver, Query, ResolveField, Root } from '@nestjs/graphql';
 import { LanguagesService } from './languages.service';
 import { CreateLanguageInput } from './create-language.input';
 import { Language } from './language.model';
 
-@Resolver()
+@Resolver(() => Language)
 export class LanguagesResolver {
   constructor(private readonly languagesService: LanguagesService) {}
 
@@ -23,8 +23,9 @@ export class LanguagesResolver {
     return this.languagesService.getAllLanguages();
   }
 
-  @Query(() => [Language])
+  @Query(() => [Language], { name: 'languages' })
   async getLanguages(): Promise<Language[]> {
     return this.languagesService.getAllLanguages();
   }
+
 }

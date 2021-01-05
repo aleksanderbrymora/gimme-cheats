@@ -1,11 +1,11 @@
 import { Module } from '@nestjs/common';
-import { LanguagesService } from './languages.service';
-import { LanguagesResolver } from './languages.resolver';
-import { LanguageEntity } from './language.entity';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { Language } from './language.model';
+import { LanguagesResolver } from './languages.resolver';
+import { LanguagesService } from './languages.service';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([LanguageEntity])],
+  imports: [TypeOrmModule.forFeature([Language])],
   exports: [LanguagesService],
   providers: [LanguagesResolver, LanguagesService],
 })

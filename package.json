@@ -13,6 +13,8 @@
   "scripts": {
     "start": "lerna run dev",
     "start:server": "yarn workspace @cheats/server dev",
-    "start:client": "yarn workspace @cheats/client dev"
+    "start:client": "yarn workspace @cheats/client dev",
+    "build": "lerna run build",
+    "codegen:client": "yarn workspace @cheats/client codegen"
   }
 }

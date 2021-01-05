@@ -1,0 +1,11 @@
+query quizlet($url: String!) {
+  quizlet(url: $url) {
+    title
+    fromLanguage
+    toLanguage
+    words {
+      from
+      to
+    }
+  }
+}
