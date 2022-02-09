@@ -1,5 +1,7 @@
 # Gimme Cheats
 
+I've also created another version of this project with Remix - https://github.com/aleksanderbrymora/ch
+
 [Visit it here](https://gimme-cheats.vercel.app/)
 
 This is a full stack project aimed to help creating cheat-sheets - a pieces of paper that contain lists of words with their translations to use during some tests. Of course I do not endorse the behavior, but I saw the niche that needed to be filled so I'm creating a tool for it.
